@@ -1,6 +1,8 @@
+filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+set nocp
 syntax on
 filetype plugin indent on
 set backup backupdir=~/.vim/backup
@@ -128,4 +130,4 @@ map <silent> <C-left>  :bp<CR>
 map <silent> <C-right> :bn<CR>
 " Make shift-insert work like in Xterm
 map <S-Insert> <MiddleMouse>
-map! <S-I
+map! <S-Insert> <MiddleMouse>
