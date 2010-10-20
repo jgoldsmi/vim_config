@@ -34,3 +34,6 @@
 [submodule "bundle/fuzzyfinder"]
 	path = bundle/fuzzyfinder
 	url = http://github.com/vim-bundles/fuzzyfinder.git
+[submodule "bundle/vimshell"]
+	path = bundle/vimshell
+	url = http://github.com/Shougo/vimshell.git
