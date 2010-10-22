@@ -48,9 +48,8 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 let NERDSpaceDelims=1
 let NERDShutUp=1
 
-" Grep options
-let Grep_Skip_Dirs = 'RCS CVS SCCS .svn .git'
-set grepprg=ack-grep\ -a
+" ack options
+let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 " C settings
 au FileType c setl cin ts=4 sts=4 sw=4 fo=crql
