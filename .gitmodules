@@ -43,3 +43,6 @@
 [submodule "bundle/bufexplorer"]
 	path = bundle/bufexplorer
 	url = http://github.com/vim-scripts/bufexplorer.zip.git
+[submodule "bundle/pathogen"]
+	path = bundle/pathogen
+	url = http://github.com/tpope/vim-pathogen.git
