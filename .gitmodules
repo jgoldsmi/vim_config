@@ -49,3 +49,6 @@
 [submodule "bundle/colqer"]
 	path = bundle/colqer
 	url = https://github.com/vim-scripts/colqer.git
+[submodule "bundle/taglist"]
+	path = bundle/taglist
+	url = https://github.com/vim-scripts/taglist.vim.git
