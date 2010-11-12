@@ -130,3 +130,21 @@ map <silent> <C-right> :bn<CR>
 " Make shift-insert work like in Xterm
 map <S-Insert> <MiddleMouse>
 map! <S-Insert> <MiddleMouse>
+
+" Colemak bindings
+nnoremap n gj
+nnoremap e gk
+nnoremap i l
+nnoremap k n
+nnoremap K N
+
+vnoremap n gj
+vnoremap e gk
+vnoremap i l
+vnoremap k n
+vnoremap K N
+
+vnoremap s i
+nnoremap s i
+nnoremap S I
+omap s i
