@@ -28,9 +28,6 @@
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = http://github.com/ervandew/supertab.git
-[submodule "bundle/fuzzyfinder"]
-	path = bundle/fuzzyfinder
-	url = http://github.com/vim-bundles/fuzzyfinder.git
 [submodule "bundle/markdown"]
 	path = bundle/markdown
 	url = http://github.com/tpope/vim-markdown.git
