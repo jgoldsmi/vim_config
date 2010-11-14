@@ -13,9 +13,6 @@
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = git://github.com/msanders/snipmate.vim.git
-[submodule "bundle/align"]
-	path = bundle/align
-	url = http://github.com/tsaleh/vim-align.git
 [submodule "bundle/vividchalk"]
 	path = bundle/vividchalk
 	url = http://github.com/tpope/vim-vividchalk.git
