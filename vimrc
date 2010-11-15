@@ -42,6 +42,9 @@ set wildmenu wildmode=list:longest
 
 set statusline=%<%f\ %h%m%r%#warningmsg#%{SyntasticStatuslineFlag()}%{fugitive#statusline()}%*%=%-14.(%l,%c%V%)\ %P
 
+" syntastic options
+let g:syntastic_enable_signs=1
+
 " Restore file position
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 
