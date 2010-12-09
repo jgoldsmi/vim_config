@@ -52,6 +52,9 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 let NERDSpaceDelims=1
 let NERDShutUp=1
 
+" NERDTree
+let NERDTreeIgnore = ['\.pyc$', '\~$']
+
 " ack options
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
