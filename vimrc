@@ -127,10 +127,10 @@ vnoremap <silent> * :call VisualSearch('f')<CR>
 vnoremap <silent> # :call VisualSearch('b')<CR>
 vnoremap <silent> gv :call VisualSearch('gv')<CR>
 " Smart way to move b/w windows
-map <C-n> <C-W>j
-map <C-e> <C-W>k
+map <C-j> <C-W>j
+map <C-k> <C-W>k
 map <C-h> <C-W>h
-map <C-i> <C-W>l
+map <C-l> <C-W>l
 " Move between buffers
 map <silent> <C-left>  :bp<CR>
 map <silent> <C-right> :bn<CR>
