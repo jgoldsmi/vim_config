@@ -67,3 +67,6 @@
 [submodule "bundle/json_syntax"]
 	path = bundle/json_syntax
 	url = https://github.com/vim-scripts/JSON.vim.git
+[submodule "bundle/neverland"]
+	path = bundle/neverland
+	url = https://github.com/trapd00r/neverland-vim-theme.git
