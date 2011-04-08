@@ -13,9 +13,6 @@
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = git://github.com/msanders/snipmate.vim.git
-[submodule "bundle/vividchalk"]
-	path = bundle/vividchalk
-	url = http://github.com/tpope/vim-vividchalk.git
 [submodule "bundle/wombat"]
 	path = bundle/wombat
 	url = http://github.com/cschlueter/vim-wombat.git
@@ -37,9 +34,6 @@
 [submodule "bundle/pathogen"]
 	path = bundle/pathogen
 	url = http://github.com/tpope/vim-pathogen.git
-[submodule "bundle/zenburn"]
-	path = bundle/zenburn
-	url = http://github.com/vim-scripts/Zenburn.git
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
