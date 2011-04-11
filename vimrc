@@ -117,6 +117,9 @@ function! VisualSearch(direction) range
     let @" = l:saved_reg
 endfunction
 
+" EasyMotion options: remap leading to avoid conflicts
+let EasyMotion_leader_key = ','
+
 " Custom mappings
 nmap <leader>nt :NERDTreeToggle<CR>
 nmap <leader>tl :TlistToggle<CR>
