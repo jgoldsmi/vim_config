@@ -36,7 +36,7 @@ set scrolloff=5
 set wrap
 set vb t_vb=
 set t_Co=256
-colorscheme molokai
+colorscheme solarized
 set listchars=eol:¶,tab:»=,trail:·,extends:»,precedes:« list
 set wildmenu wildmode=list:longest
 
