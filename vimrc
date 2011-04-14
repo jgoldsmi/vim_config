@@ -37,7 +37,8 @@ set wrap
 set vb t_vb=
 set t_Co=256
 colorscheme solarized
-set listchars=eol:¶,tab:»=,trail:·,extends:»,precedes:« list
+call togglebg#map("<F5>") "Uses <F5> to switch b/w light and dark
+set listchars=eol:¬,tab:»=,trail:·,extends:»,precedes:« list
 set wildmenu wildmode=list:longest
 
 set statusline=%<%f\ %h%m%r%#warningmsg#%{SyntasticStatuslineFlag()}%{fugitive#statusline()}%*%=%-14.(%l,%c%V%)\ %P
