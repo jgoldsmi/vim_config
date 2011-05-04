@@ -70,3 +70,6 @@
 [submodule "bundle/gitv"]
 	path = bundle/gitv
 	url = https://github.com/gregsexton/gitv.git
+[submodule "bundle/extradite"]
+	path = bundle/extradite
+	url = https://github.com/int3/vim-extradite.git
