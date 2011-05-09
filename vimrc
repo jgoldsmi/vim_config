@@ -59,6 +59,10 @@ let NERDTreeIgnore = ['\.pyc$', '\~$']
 " ack options
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
+" completion settings
+let g:SuperTabDefaultCompletionType = "context"
+set completeopt=menuone,longest,preview
+
 " C settings
 au FileType c setl cin ts=4 sts=4 sw=4 fo=crql
 
