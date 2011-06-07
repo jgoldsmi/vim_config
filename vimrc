@@ -130,8 +130,6 @@ let EasyMotion_leader_key = ','
 nnoremap ; :
 nmap <leader>nt :NERDTreeToggle<CR>
 nmap <leader>tb :TagbarToggle<CR>
-nmap <leader>ft :FufTaggedFile<CR>
-nmap <leader>ff :FufFile<CR>
 " Extra tag helpers
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
