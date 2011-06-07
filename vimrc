@@ -129,7 +129,7 @@ let EasyMotion_leader_key = ','
 " Custom mappings
 nnoremap ; :
 nmap <leader>nt :NERDTreeToggle<CR>
-nmap <leader>tl :TlistToggle<CR>
+nmap <leader>tb :TagbarToggle<CR>
 nmap <leader>ft :FufTaggedFile<CR>
 nmap <leader>ff :FufFile<CR>
 " Extra tag helpers
