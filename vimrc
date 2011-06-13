@@ -67,6 +67,7 @@ set completeopt=menuone,longest,preview
 au FileType c setl cin ts=4 sts=4 sw=4 fo=crql
 
 " Erlang settings
+let g:erlangHighlightBIFs = 1
 let g:erlangCompleteFile="~/.vim/bundle/vimerl/autoload/erlang_complete.erl"
 let g:erlangCheckFile="~/.vim/bundle/vimerl/compiler/erlang_check.erl"
 
