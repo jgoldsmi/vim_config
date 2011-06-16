@@ -70,6 +70,8 @@ au FileType c setl cin ts=4 sts=4 sw=4 fo=crql
 let g:erlangHighlightBIFs = 1
 let g:erlangCompleteFile="~/.vim/bundle/vimerl/autoload/erlang_complete.erl"
 let g:erlangCheckFile="~/.vim/bundle/vimerl/compiler/erlang_check.erl"
+let g:erlangCompletionGrep="zgrep"
+let g:erlangManSuffix="erl\.gz"
 
 " Java settings
 au FileType java setl cin ts=4 sw=4 sts=4 fo=crql
