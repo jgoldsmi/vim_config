@@ -156,3 +156,36 @@ map <silent> <C-right> :bn<CR>
 map <S-Insert> <MiddleMouse>
 map! <S-Insert> <MiddleMouse>
 
+let g:colemak_bindings = 0
+function! ColemakBindings()
+    if g:colemak_bindings == 0
+        nnoremap n gj
+        nnoremap e gk
+        nnoremap i l
+
+        vnoremap n gj
+        vnoremap e gk
+        vnoremap i l
+
+        vnoremap s i
+        nnoremap s i
+        nnoremap S I
+        omap s i
+        let g:colemak_bindings = 1
+    else
+        nunmap n
+        nunmap e
+        nunmap i
+
+        vunmap n
+        vunmap e
+        vunmap i
+
+        vunmap s
+        nunmap s
+        nunmap S
+        ounmap s
+        let g:colemak_bindings = 0
+    endif
+endfunction
+map <F7> :call ColemakBindings()<CR>
