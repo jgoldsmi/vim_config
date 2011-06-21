@@ -162,6 +162,8 @@ function! ColemakBindings()
         nnoremap n gj
         nnoremap e gk
         nnoremap i l
+        nnoremap k n
+        nnoremap K N
 
         vnoremap n gj
         vnoremap e gk
@@ -176,6 +178,8 @@ function! ColemakBindings()
         nunmap n
         nunmap e
         nunmap i
+        nunmap k
+        nunmap K
 
         vunmap n
         vunmap e
@@ -188,4 +192,5 @@ function! ColemakBindings()
         let g:colemak_bindings = 0
     endif
 endfunction
+call ColemakBindings()
 map <F7> :call ColemakBindings()<CR>
