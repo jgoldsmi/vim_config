@@ -136,7 +136,7 @@ let EasyMotion_leader_key = ','
 " Custom mappings
 nnoremap ; :
 nmap <leader>nt :NERDTreeToggle<CR>
-nmap <leader>tb :TagbarToggle<CR>
+nmap <F7> :TagbarToggle<CR>
 " Extra tag helpers
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
