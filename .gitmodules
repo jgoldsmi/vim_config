@@ -82,3 +82,6 @@
 [submodule "bundle/abolish"]
 	path = bundle/abolish
 	url = https://github.com/tpope/vim-abolish.git
+[submodule "bundle/repeat"]
+	path = bundle/repeat
+	url = https://github.com/tpope/vim-repeat.git
