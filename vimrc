@@ -49,10 +49,6 @@ let g:syntastic_enable_signs=1
 " Restore file position
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 
-" nerd_commenter
-let NERDSpaceDelims=1
-let NERDShutUp=1
-
 " NERDTree
 let NERDTreeIgnore = ['\.pyc$', '\~$']
 
