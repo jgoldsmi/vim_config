@@ -34,9 +34,6 @@
 [submodule "bundle/mako_indent"]
 	path = bundle/mako_indent
 	url = https://github.com/vim-scripts/mako.vim--Torborg.git
-[submodule "bundle/command-t"]
-	path = bundle/command-t
-	url = https://github.com/vim-scripts/Command-T.git
 [submodule "bundle/molokai"]
 	path = bundle/molokai
 	url = https://github.com/vim-scripts/molokai.git
