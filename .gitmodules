@@ -91,3 +91,6 @@
 [submodule "bundle/current-func-info"]
 	path = bundle/current-func-info
 	url = https://github.com/tyru/current-func-info.vim.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
