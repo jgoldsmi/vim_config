@@ -88,3 +88,6 @@
 [submodule "bundle/vim-powerline"]
 	path = bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline.git
+[submodule "bundle/current-func-info"]
+	path = bundle/current-func-info
+	url = https://github.com/tyru/current-func-info.vim.git
