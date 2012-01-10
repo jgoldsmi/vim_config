@@ -88,3 +88,6 @@
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
+[submodule "bundle/xml.vim"]
+	path = bundle/xml.vim
+	url = https://github.com/othree/xml.vim.git
