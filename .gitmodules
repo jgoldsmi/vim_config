@@ -52,9 +52,6 @@
 [submodule "bundle/gitv"]
 	path = bundle/gitv
 	url = https://github.com/gregsexton/gitv.git
-[submodule "bundle/pep8"]
-	path = bundle/pep8
-	url = https://github.com/vim-scripts/pep8.git
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/vim-scripts/Tagbar.git
