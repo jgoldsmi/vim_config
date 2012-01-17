@@ -10,9 +10,6 @@
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = git://github.com/msanders/snipmate.vim.git
-[submodule "bundle/wombat"]
-	path = bundle/wombat
-	url = https://github.com/cschlueter/vim-wombat.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = https://github.com/ervandew/supertab.git
@@ -34,9 +31,6 @@
 [submodule "bundle/mako_indent"]
 	path = bundle/mako_indent
 	url = https://github.com/vim-scripts/mako.vim--Torborg.git
-[submodule "bundle/molokai"]
-	path = bundle/molokai
-	url = https://github.com/vim-scripts/molokai.git
 [submodule "bundle/json_syntax"]
 	path = bundle/json_syntax
 	url = https://github.com/vim-scripts/JSON.vim.git
