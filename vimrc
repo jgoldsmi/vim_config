@@ -49,9 +49,6 @@ let g:syntastic_enable_signs=1
 " Restore file position
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 
-" NERDTree
-let NERDTreeIgnore = ['\.pyc$', '\~$']
-
 " ack options
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
@@ -130,7 +127,6 @@ let EasyMotion_leader_key = ','
 
 " Custom mappings
 nnoremap ; :
-nmap <leader>nt :NERDTreeToggle<CR>
 nmap <F7> :TagbarToggle<CR>
 " Extra tag helpers
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
