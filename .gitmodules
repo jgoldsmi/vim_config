@@ -85,3 +85,6 @@
 [submodule "bundle/wikipedia"]
 	path = bundle/wikipedia
 	url = https://github.com/vim-scripts/wikipedia.vim.git
+[submodule "bundle/neocomplcache"]
+	path = bundle/neocomplcache
+	url = https://github.com/Shougo/neocomplcache.git
