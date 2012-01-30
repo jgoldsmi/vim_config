@@ -9,7 +9,7 @@ filetype plugin indent on
 set backup backupdir=~/.vim/backup
 set directory=~/.vim/tmp
 set omnifunc=syntaxcomplete#Complete
-set number
+set relativenumber
 set autoread
 set background=dark
 set expandtab smarttab
