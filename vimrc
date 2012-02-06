@@ -96,9 +96,6 @@ au FileType java setl cin ts=4 sw=4 sts=4 fo=crql
 au FileType python setl sta ts=4 sw=4 sts=4 fo=crql
 let python_highlight_all = 1
 au BufRead,BufNewFile *.mako  set ft=mako
-" Ropevim options
-let ropevim_extended_complete=1
-let ropevim_guess_project=1
 
 " PHP settings
 au FileType php setl et sw=2 ts=2 sts=2 ai si isk-=$
