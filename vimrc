@@ -148,6 +148,15 @@ let EasyMotion_leader_key = ','
 " Custom mappings
 nnoremap ; :
 nmap <F7> :TagbarToggle<CR>
+" Don't use the arrow keys
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
+noremap! <Up> <nop>
+noremap! <Down> <nop>
+noremap! <Left> <nop>
+noremap! <Right> <nop>
 " Extra tag helpers
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
