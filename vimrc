@@ -41,8 +41,6 @@ call togglebg#map("<F5>") "Uses <F5> to switch b/w light and dark
 set listchars=eol:¬,tab:»=,trail:·,extends:»,precedes:« list
 set wildmenu wildmode=list:longest
 
-set statusline=%<%f\ %h%m%r%#warningmsg#%{SyntasticStatuslineFlag()}%{fugitive#statusline()}%*%=%-14.(%l,%c%V%)\ %P
-
 " neocomplcache
 " Use neocomplcache.
 let g:neocomplcache_enable_at_startup = 1
