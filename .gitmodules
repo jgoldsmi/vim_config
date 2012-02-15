@@ -94,3 +94,6 @@
 [submodule "bundle/threesome"]
 	path = bundle/threesome
 	url = https://github.com/sjl/threesome.vim.git
+[submodule "bundle/neocomplcache-snippets"]
+	path = bundle/neocomplcache-snippets
+	url = https://github.com/Shougo/neocomplcache-snippets-complete.git
