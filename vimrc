@@ -74,7 +74,6 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 " completion settings
-let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 
 " C settings
