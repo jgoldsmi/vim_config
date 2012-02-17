@@ -71,6 +71,11 @@ inoremap <expr><C-e>  neocomplcache#cancel_popup()
 imap <C-k>     <Plug>(neocomplcache_snippets_expand)
 smap <C-k>     <Plug>(neocomplcache_snippets_expand)
 
+" YankRing
+nnoremap <leader>y :YRShow<CR>
+let yankring_replace_n_pkey = '<leader>n'
+let yankring_replace_n_nkey = '<leader>p'
+
 " syntastic options
 let g:syntastic_enable_signs=1
 
@@ -173,9 +178,6 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
-" Move between buffers
-map <silent> <C-left>  :bp<CR>
-map <silent> <C-right> :bn<CR>
 " Make shift-insert work like in Xterm
 map <S-Insert> <MiddleMouse>
 map! <S-Insert> <MiddleMouse>
