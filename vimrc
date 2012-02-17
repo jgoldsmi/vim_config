@@ -22,6 +22,8 @@ set ignorecase
 set magic
 set ruler
 set smartcase
+set tildeop
+set gdefault
 set laststatus=2
 set nostartofline
 set backspace=eol,indent,start
