@@ -97,3 +97,6 @@
 [submodule "bundle/indent-object"]
 	path = bundle/indent-object
 	url = https://github.com/michaeljsmith/vim-indent-object
+[submodule "bundle/sudo"]
+	path = bundle/sudo
+	url = https://github.com/vim-scripts/sudo.vim.git
