@@ -11,7 +11,6 @@ set directory=~/.vim/tmp
 set omnifunc=syntaxcomplete#Complete
 set relativenumber
 set autoread
-set background=dark
 set expandtab smarttab
 set shiftwidth=4 tabstop=8 softtabstop=4
 set shiftround
