@@ -156,6 +156,12 @@ endfunction
 " EasyMotion options: remap leading to avoid conflicts
 let EasyMotion_leader_key = ','
 
+" Autoreload vimrc if we edit it
+augroup reload_vimrc " {
+    autocmd!
+    autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END " }
+
 " Custom mappings
 nnoremap ; :
 nmap <leader>t :TagbarToggle<CR>
