@@ -40,6 +40,7 @@ set t_Co=256
 colorscheme solarized
 call togglebg#map("<F5>") "Uses <F5> to switch b/w light and dark
 set listchars=eol:¬,tab:»=,trail:·,extends:»,precedes:« list
+set cursorline
 set wildmenu wildmode=list:longest
 
 " neocomplcache
