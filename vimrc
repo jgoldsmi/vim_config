@@ -108,6 +108,17 @@ au FileType python setl sta ts=4 sw=4 sts=4 fo=crql
 let python_highlight_all = 1
 au BufRead,BufNewFile *.mako  set ft=mako
 let g:pymode_folding = 0
+" Add the virtualenv's site-packages to vim path
+py << EOF
+import os.path
+import sys
+import vim
+if 'VIRTUAL_ENV' in os.environ:
+    project_base_dir = os.environ['VIRTUAL_ENV']
+    sys.path.insert(0, project_base_dir)
+    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+    execfile(activate_this, dict(__file__=activate_this))
+EOF
 
 " PHP settings
 au FileType php setl et sw=2 ts=2 sts=2 ai si isk-=$
