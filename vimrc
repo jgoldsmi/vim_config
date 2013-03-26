@@ -85,7 +85,9 @@ let g:syntastic_enable_signs=1
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 
 " ack options
-let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+if executable("ack-grep")
+    let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+endif
 
 " completion settings
 set completeopt=menuone,longest,preview
