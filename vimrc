@@ -36,6 +36,7 @@ Bundle 'othree/xml.vim'
 Bundle 'sophacles/vim-bundle-mako'
 Bundle 'elzr/vim-json'
 Bundle 'fakeclip'
+Bundle 'maxbrunsfeld/vim-yankstack'
 
 syntax on
 filetype plugin indent on
@@ -76,11 +77,9 @@ set listchars=eol:¬,tab:»=,trail:·,extends:»,precedes:« list
 set cursorline
 set wildmenu wildmode=list:longest
 
-
-" YankRing
-nnoremap <leader>y :YRShow<CR>
-let yankring_replace_n_pkey = '<leader>n'
-let yankring_replace_n_nkey = '<leader>p'
+"YankStack
+nmap <leader>p <Plug>yankstack_substitute_older_paste
+nmap <leader>P <Plug>yankstack_substitute_newer_paste
 
 " syntastic options
 let g:syntastic_enable_signs=1

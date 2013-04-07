@@ -4,9 +4,6 @@
 [submodule "bundle/wikipedia"]
 	path = bundle/wikipedia
 	url = https://github.com/vim-scripts/wikipedia.vim.git
-[submodule "bundle/yankring"]
-	path = bundle/yankring
-	url = https://github.com/vim-scripts/YankRing.vim.git
 [submodule "bundle/indent-object"]
 	path = bundle/indent-object
 	url = https://github.com/michaeljsmith/vim-indent-object
