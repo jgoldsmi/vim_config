@@ -28,6 +28,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'majutsushi/tagbar'
 Bundle 'klen/python-mode'
 Bundle 'godlygeek/tabular'
+Bundle 'scrooloose/syntastic'
 
 syntax on
 filetype plugin indent on

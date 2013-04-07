@@ -1,6 +1,3 @@
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
 [submodule "bundle/mako_highlight"]
 	path = bundle/mako_highlight
 	url = https://github.com/vim-scripts/mako.vim.git
