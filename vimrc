@@ -17,6 +17,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'Valloric/MatchTagAlways'
+Bundle 'tpope/vim-abolish'
 
 syntax on
 filetype plugin indent on
