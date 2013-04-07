@@ -37,6 +37,7 @@ Bundle 'sophacles/vim-bundle-mako'
 Bundle 'elzr/vim-json'
 Bundle 'fakeclip'
 Bundle 'maxbrunsfeld/vim-yankstack'
+Bundle 'mattn/zencoding-vim'
 
 syntax on
 filetype plugin indent on
