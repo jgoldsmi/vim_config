@@ -16,6 +16,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'Valloric/MatchTagAlways'
 
 syntax on
 filetype plugin indent on
