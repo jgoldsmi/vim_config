@@ -18,6 +18,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'Valloric/MatchTagAlways'
 Bundle 'tpope/vim-abolish'
+Bundle 'mileszs/ack.vim'
 
 syntax on
 filetype plugin indent on
