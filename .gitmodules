@@ -70,9 +70,6 @@
 [submodule "bundle/wikipedia"]
 	path = bundle/wikipedia
 	url = https://github.com/vim-scripts/wikipedia.vim.git
-[submodule "bundle/neocomplcache"]
-	path = bundle/neocomplcache
-	url = https://github.com/Shougo/neocomplcache.git
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = https://github.com/klen/python-mode.git
@@ -94,9 +91,6 @@
 [submodule "bundle/MatchTagAlways"]
 	path = bundle/MatchTagAlways
 	url = https://github.com/Valloric/MatchTagAlways.git
-[submodule "bundle/neosnippet"]
-	path = bundle/neosnippet
-	url = https://github.com/Shougo/neosnippet.git
 [submodule "bundle/jedi"]
 	path = bundle/jedi
 	url = https://github.com/davidhalter/jedi-vim.git
