@@ -10,9 +10,6 @@
 [submodule "bundle/vimerl"]
 	path = bundle/vimerl
 	url = https://github.com/jimenezrick/vimerl.git
-[submodule "bundle/repeat"]
-	path = bundle/repeat
-	url = https://github.com/tpope/vim-repeat.git
 [submodule "bundle/unimpaired"]
 	path = bundle/unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
