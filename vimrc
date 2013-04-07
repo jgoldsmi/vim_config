@@ -20,6 +20,7 @@ Bundle 'Valloric/MatchTagAlways'
 Bundle 'tpope/vim-abolish'
 Bundle 'mileszs/ack.vim'
 Bundle 'tomtom/tcomment_vim'
+Bundle 'kien/ctrlp.vim'
 
 syntax on
 filetype plugin indent on
