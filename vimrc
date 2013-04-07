@@ -24,6 +24,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'terryma/vim-expand-region'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'majutsushi/tagbar'
+Bundle 'klen/python-mode'
 
 syntax on
 filetype plugin indent on

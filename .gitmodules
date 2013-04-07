@@ -40,9 +40,6 @@
 [submodule "bundle/wikipedia"]
 	path = bundle/wikipedia
 	url = https://github.com/vim-scripts/wikipedia.vim.git
-[submodule "bundle/python-mode"]
-	path = bundle/python-mode
-	url = https://github.com/klen/python-mode.git
 [submodule "bundle/threesome"]
 	path = bundle/threesome
 	url = https://github.com/sjl/threesome.vim.git
