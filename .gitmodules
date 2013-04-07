@@ -16,9 +16,6 @@
 [submodule "bundle/wikipedia"]
 	path = bundle/wikipedia
 	url = https://github.com/vim-scripts/wikipedia.vim.git
-[submodule "bundle/threesome"]
-	path = bundle/threesome
-	url = https://github.com/sjl/threesome.vim.git
 [submodule "bundle/yankring"]
 	path = bundle/yankring
 	url = https://github.com/vim-scripts/YankRing.vim.git
