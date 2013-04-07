@@ -21,6 +21,7 @@ Bundle 'tpope/vim-abolish'
 Bundle 'mileszs/ack.vim'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'kien/ctrlp.vim'
+Bundle 'terryma/vim-expand-region'
 
 syntax on
 filetype plugin indent on
