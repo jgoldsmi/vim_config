@@ -35,6 +35,7 @@ Bundle 'tyru/current-func-info.vim'
 Bundle 'othree/xml.vim'
 Bundle 'sophacles/vim-bundle-mako'
 Bundle 'elzr/vim-json'
+Bundle 'fakeclip'
 
 syntax on
 filetype plugin indent on
