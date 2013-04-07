@@ -49,9 +49,6 @@
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = https://github.com/klen/python-mode.git
-[submodule "bundle/taskpaper"]
-	path = bundle/taskpaper
-	url = https://github.com/davidoc/taskpaper.vim
 [submodule "bundle/threesome"]
 	path = bundle/threesome
 	url = https://github.com/sjl/threesome.vim.git
