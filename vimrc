@@ -3,7 +3,6 @@ set nocp
 
 " Get vundle from github if not installed
 if !isdirectory("~/.vim/bundle/vundle")
-    call system("mkdir -p ~/.vim/bundle")
     call system("git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle")
 endif
 
