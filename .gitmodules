@@ -19,9 +19,6 @@
 [submodule "bundle/json_syntax"]
 	path = bundle/json_syntax
 	url = https://github.com/vim-scripts/JSON.vim.git
-[submodule "bundle/tagbar"]
-	path = bundle/tagbar
-	url = https://github.com/vim-scripts/Tagbar.git
 [submodule "bundle/vimerl"]
 	path = bundle/vimerl
 	url = https://github.com/jimenezrick/vimerl.git

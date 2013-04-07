@@ -23,6 +23,7 @@ Bundle 'tomtom/tcomment_vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'terryma/vim-expand-region'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'majutsushi/tagbar'
 
 syntax on
 filetype plugin indent on
