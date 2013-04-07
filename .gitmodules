@@ -10,9 +10,6 @@
 [submodule "bundle/vimerl"]
 	path = bundle/vimerl
 	url = https://github.com/jimenezrick/vimerl.git
-[submodule "bundle/xml.vim"]
-	path = bundle/xml.vim
-	url = https://github.com/othree/xml.vim.git
 [submodule "bundle/eunuch"]
 	path = bundle/eunuch
 	url = https://github.com/tpope/vim-eunuch.git

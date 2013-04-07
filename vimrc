@@ -32,6 +32,7 @@ Bundle 'klen/python-mode'
 Bundle 'godlygeek/tabular'
 Bundle 'scrooloose/syntastic'
 Bundle 'tyru/current-func-info.vim'
+Bundle 'othree/xml.vim'
 
 syntax on
 filetype plugin indent on
