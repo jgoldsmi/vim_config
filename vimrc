@@ -29,6 +29,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'klen/python-mode'
 Bundle 'godlygeek/tabular'
 Bundle 'scrooloose/syntastic'
+Bundle 'tyru/current-func-info.vim'
 
 syntax on
 filetype plugin indent on
