@@ -22,9 +22,6 @@
 [submodule "bundle/json_syntax"]
 	path = bundle/json_syntax
 	url = https://github.com/vim-scripts/JSON.vim.git
-[submodule "bundle/EasyMotion"]
-	path = bundle/EasyMotion
-	url = https://github.com/vim-scripts/EasyMotion.git
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/vim-scripts/Tagbar.git
