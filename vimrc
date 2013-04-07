@@ -13,6 +13,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-fugitive'
 
 syntax on
 filetype plugin indent on
