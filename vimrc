@@ -1,8 +1,4 @@
 filetype off
-let g:pathogen_disabled = ["pathogen"]
-call pathogen#infect()
-call pathogen#helptags()
-
 set nocp
 syntax on
 filetype plugin indent on
