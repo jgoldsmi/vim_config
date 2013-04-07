@@ -1,9 +1,3 @@
-[submodule "bundle/mako_highlight"]
-	path = bundle/mako_highlight
-	url = https://github.com/vim-scripts/mako.vim.git
-[submodule "bundle/mako_indent"]
-	path = bundle/mako_indent
-	url = https://github.com/vim-scripts/mako.vim--Torborg.git
 [submodule "bundle/json_syntax"]
 	path = bundle/json_syntax
 	url = https://github.com/vim-scripts/JSON.vim.git

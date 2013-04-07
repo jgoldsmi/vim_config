@@ -33,6 +33,7 @@ Bundle 'godlygeek/tabular'
 Bundle 'scrooloose/syntastic'
 Bundle 'tyru/current-func-info.vim'
 Bundle 'othree/xml.vim'
+Bundle 'sophacles/vim-bundle-mako'
 
 syntax on
 filetype plugin indent on
