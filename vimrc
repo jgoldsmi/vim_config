@@ -38,6 +38,7 @@ Bundle 'elzr/vim-json'
 Bundle 'fakeclip'
 Bundle 'maxbrunsfeld/vim-yankstack'
 Bundle 'mattn/zencoding-vim'
+Bundle 'weiss/textgenshi.vim'
 
 syntax on
 filetype plugin indent on
@@ -125,6 +126,11 @@ if 'VIRTUAL_ENV' in os.environ:
     activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
     execfile(activate_this, dict(__file__=activate_this))
 EOF
+
+" Genshi settings
+augroup filetypedetect
+    autocmd BufNewFile,BufRead *.genshi setfiletype textgenshi
+augroup END
 
 " PHP settings
 au FileType php setl et sw=2 ts=2 sts=2 ai si isk-=$
