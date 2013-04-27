@@ -39,6 +39,12 @@ Bundle 'fakeclip'
 Bundle 'maxbrunsfeld/vim-yankstack'
 Bundle 'mattn/zencoding-vim'
 Bundle 'weiss/textgenshi.vim'
+" Vim organizer and dependencies
+Bundle 'calendar.vim--Matsumoto'
+Bundle 'chrisbra/NrrwRgn'
+Bundle 'utl.vim'
+Bundle 'hsitz/VimOrganizer'
+
 
 syntax on
 filetype plugin indent on
@@ -82,6 +88,9 @@ set wildmenu wildmode=list:longest
 "YankStack
 nmap <leader>p <Plug>yankstack_substitute_older_paste
 nmap <leader>P <Plug>yankstack_substitute_newer_paste
+
+" VimOrganizer options
+au BufEnter *.org call org#SetOrgFileType()
 
 " syntastic options
 let g:syntastic_enable_signs=1
