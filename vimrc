@@ -221,3 +221,6 @@ map <C-l> <C-W>l
 " Make shift-insert work like in Xterm
 map <S-Insert> <MiddleMouse>
 map! <S-Insert> <MiddleMouse>
+" Keep selection selected when indenting
+vnoremap > >gv
+vnoremap < <gv
