@@ -124,6 +124,7 @@ au FileType java setl cin ts=4 sw=4 sts=4 fo=crql
 au FileType python setl sta ts=4 sw=4 sts=4 fo=crql
 let python_highlight_all = 1
 au BufRead,BufNewFile *.mako  set ft=mako
+au BufRead,BufNewFile *.html set ft=htmldjango
 let g:pymode_folding = 0
 " Add the virtualenv's site-packages to vim path
 py << EOF
