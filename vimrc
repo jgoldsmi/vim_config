@@ -84,7 +84,10 @@ colorscheme solarized
 call togglebg#map("<F5>") "Uses <F5> to switch b/w light and dark
 set listchars=eol:¬,tab:»=,trail:·,extends:»,precedes:« list
 set cursorline
-set wildmenu wildmode=list:longest
+set wildmenu
+set wildmode=list:longest
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/* "VCS directories
+set wildignore+=*.pyc
 
 "YankStack
 nmap <leader>p <Plug>yankstack_substitute_older_paste
