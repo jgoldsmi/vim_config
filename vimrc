@@ -171,6 +171,7 @@ au FileType markdown setl et spell tw=80
 " CtrlP settings
 let g:ctrlp_max_height = 30
 let g:ctrlp_show_hidden = 1
+let g:ctrlp_open_new_file = 'r'
 
 " Custom functions
 function! CmdLine(str)
