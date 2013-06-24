@@ -8,3 +8,4 @@ Abolish {d,g}iong {}oing
 Abolish teh the
 Abolish taht that
 Abolish thign{,s} thing{}
+Abolish issuse issues
