@@ -166,7 +166,7 @@ let g:is_bash = 1
 au FileType ruby setl et sw=2 ts=2 sts=2 ai si
 
 " Markdown settings
-au FileType markdown setl et spell
+au FileType markdown setl et spell tw=80
 
 " CtrlP settings
 let g:ctrlp_max_height = 30
