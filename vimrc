@@ -39,6 +39,7 @@ Bundle 'fakeclip'
 Bundle 'maxbrunsfeld/vim-yankstack'
 Bundle 'mattn/zencoding-vim'
 Bundle 'weiss/textgenshi.vim'
+Bundle 'vim-perl/vim-perl'
 " Vim organizer and dependencies
 Bundle 'calendar.vim--Matsumoto'
 Bundle 'chrisbra/NrrwRgn'
@@ -112,6 +113,10 @@ set completeopt=menuone,longest,preview
 
 " C settings
 au FileType c setl cin ts=4 sts=4 sw=4 fo=crql
+
+" Perl settings
+let perl_include_pod = 1
+au FileType perl setl noet
 
 " Erlang settings
 let g:erlangHighlightBIFs = 1
