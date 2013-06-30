@@ -1,6 +1,10 @@
 filetype off
 set nocp
 
+"==============================================================================
+" NeoBundle Setup
+"==============================================================================
+
 " Get neobundle from github if not installed
 let g:bundle_dir = "~/.vim/bundle/neobundle.vim"
 if !isdirectory("~/.vim/bundle/vundle")
@@ -14,6 +18,10 @@ endif
 call neobundle#rc(expand("~/.vim/bundle"))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
+
+"==============================================================================
+" NeoBundle Listing
+"==============================================================================
 
 NeoBundle 'Shougo/vimproc', {
       \ 'build' : {
@@ -59,6 +67,9 @@ filetype plugin indent on
 
 NeoBundleCheck
 
+"==============================================================================
+" Builtin Settings
+"==============================================================================
 set backup backupdir=~/.vim/backup
 set directory=~/.vim/tmp
 set omnifunc=syntaxcomplete#Complete
@@ -185,7 +196,9 @@ let g:ctrlp_max_height = 30
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_open_new_file = 'r'
 
+"==============================================================================
 " Custom functions
+"==============================================================================
 function! CmdLine(str)
     exe "menu Foo.Bar :" . a:str
     emenu Foo.Bar
@@ -220,7 +233,9 @@ augroup reload_vimrc " {
     autocmd BufWritePost $MYVIMRC source $MYVIMRC
 augroup END " }
 
+"==============================================================================
 " Custom mappings
+"==============================================================================
 nnoremap ; :
 nmap <leader>t :TagbarToggle<CR>
 " Extra tag helpers
