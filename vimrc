@@ -233,9 +233,6 @@ function! VisualSearch(direction) range
     let @" = l:saved_reg
 endfunction
 
-" EasyMotion options: remap leading to avoid conflicts
-let EasyMotion_leader_key = ','
-
 " Autoreload vimrc if we edit it
 augroup reload_vimrc " {
     autocmd!
@@ -245,11 +242,12 @@ augroup END " }
 "==============================================================================
 " Custom mappings
 "==============================================================================
-nnoremap ; :
+" Use comma as leader everywhere
+let mapleader = ","
+let g:mapleader = ","
+let maplocalleader = ","
+let g:maplocalleader = ","
 nmap <leader>t :TagbarToggle<CR>
-" Extra tag helpers
-map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
-map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 "  In visual mode when you press * or # to search for the current selection
 vnoremap <silent> * :call VisualSearch('f')<CR>
 vnoremap <silent> # :call VisualSearch('b')<CR>
