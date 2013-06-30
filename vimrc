@@ -70,7 +70,7 @@ NeoBundle 'mattn/zencoding-vim'
 
 " Display
 NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle 'Lokaltog/powerline', {'rev': 'develop', 'rtp': 'powerline/bindings/vim'}
 NeoBundle 'tyru/current-func-info.vim'
 NeoBundle 'fakeclip'
 
