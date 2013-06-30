@@ -313,6 +313,8 @@ nnoremap <silent> [unite]n :<C-u>Unite -buffer-name=find find:.<CR>
 nnoremap <silent> [unite]c :<C-u>Unite -buffer-name=commands command<CR>
 " Quick bookmarks
 nnoremap <silent> [unite]b :<C-u>Unite -buffer-name=bookmarks bookmark<CR>
+" Quick commands
+nnoremap <silent> [unite]; :<C-u>Unite -buffer-name=history history/command command<CR>
 
 " Local overrides for work etc
 try
