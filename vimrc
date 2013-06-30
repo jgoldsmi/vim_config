@@ -295,6 +295,7 @@ map <C-l> <C-W>l
 "==============================================================================
 " Normal Mode Mappings
 "==============================================================================
+nnoremap <leader>e :Errors<CR>
 nnoremap <leader>o :only<CR>
 nnoremap <leader>p "set paste!<CR>
 nnoremap <leader>t :TagbarToggle<CR>
