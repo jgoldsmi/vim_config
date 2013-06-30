@@ -58,15 +58,23 @@ NeoBundle 'majutsushi/tagbar'
 " Editing
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'tpope/vim-abolish'
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'tpope/vim-repeat'
 NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tpope/vim-eunuch'
-NeoBundle 'terryma/vim-expand-region'
 NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'mattn/zencoding-vim'
+
+" Text objects
+NeoBundle 'terryma/vim-expand-region'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'tpope/vim-repeat'
+NeoBundle 'kana/vim-textobj-user'
+NeoBundle 'kana/vim-textobj-entire' " ae, ie
+NeoBundle 'kana/vim-textobj-lastpat' " a/, i/, a?, i?
+NeoBundle 'kana/vim-textobj-line' " al, il
+NeoBundle 'kana/vim-textobj-indent' " ai, ii, aI, iI
+NeoBundle 'lucapette/vim-textobj-underscore' " a_, i_
 
 " Display
 NeoBundle 'altercation/vim-colors-solarized'
