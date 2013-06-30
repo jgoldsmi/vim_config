@@ -32,38 +32,47 @@ NeoBundle 'Shougo/vimproc', {
       \    },
       \ }
 
+" Unite
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/unite-outline'
 NeoBundle 'Shougo/unite-help'
 NeoBundle 'thinca/vim-unite-history'
-NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'Lokaltog/vim-easymotion'
-NeoBundle 'Valloric/YouCompleteMe'
+
+" Languages
+NeoBundle 'klen/python-mode'
+NeoBundle 'weiss/textgenshi.vim'
+NeoBundle 'sophacles/vim-bundle-mako'
+NeoBundle 'vim-perl/vim-perl'
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'othree/xml.vim'
 NeoBundle 'Valloric/MatchTagAlways'
+NeoBundle 'tpope/vim-markdown'
+NeoBundle 'elzr/vim-json'
+
+" Programming
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'mileszs/ack.vim'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'majutsushi/tagbar'
+
+" Editing
+NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'tpope/vim-abolish'
 NeoBundle 'tpope/vim-surround'
-NeoBundle 'tpope/vim-markdown'
 NeoBundle 'tpope/vim-repeat'
 NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tpope/vim-eunuch'
-NeoBundle 'mileszs/ack.vim'
-NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'terryma/vim-expand-region'
-NeoBundle 'Lokaltog/vim-powerline'
-NeoBundle 'majutsushi/tagbar'
-NeoBundle 'klen/python-mode'
+NeoBundle 'Valloric/YouCompleteMe'
+NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'godlygeek/tabular'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'tyru/current-func-info.vim'
-NeoBundle 'othree/xml.vim'
-NeoBundle 'sophacles/vim-bundle-mako'
-NeoBundle 'elzr/vim-json'
-NeoBundle 'fakeclip'
 NeoBundle 'mattn/zencoding-vim'
-NeoBundle 'weiss/textgenshi.vim'
-NeoBundle 'vim-perl/vim-perl'
-NeoBundle 'vim-ruby/vim-ruby'
+
+" Display
+NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle 'tyru/current-func-info.vim'
+NeoBundle 'fakeclip'
 
 syntax on
 filetype plugin indent on
