@@ -111,7 +111,7 @@ set laststatus=2
 set nostartofline
 set backspace=eol,indent,start
 set mouse=a
-set showmode
+set noshowmode
 set showmatch matchtime=5
 set showcmd
 set autoindent smartindent
