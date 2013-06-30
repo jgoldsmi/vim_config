@@ -221,6 +221,14 @@ elseif executable('ack')
     let g:unite_source_grep_recursive_opt = ''
 endif
 
+" Make quickmatch easier for colemak
+let g:unite_quick_match_table =
+      \ {
+      \     'a' : 0, 'r' : 1, 's' : 2, 't' : 3, 'd' : 4, 'h' : 5, 'n' : 6, 'e' : 7, 'i' : 8, 'o' : 9,
+      \     'q' : 10, 'w' : 11, 'f' : 12, 'p' : 13, 'g' : 14, 'j' : 15, 'l' : 16, 'u' : 17, 'y' : 18, ';' : 19,
+      \     '1' : 20, '2' : 21, '3' : 22, '4' : 23, '5' : 24, '6' : 25, '7' : 26, '8' : 27, '9' : 28, '0' : 29,
+      \ }
+
 "==============================================================================
 " Custom functions
 "==============================================================================
@@ -318,8 +326,8 @@ nnoremap <silent> [unite]m :<C-u>Unite -buffer-name=mru file_mru<CR>
 nnoremap <silent> [unite]n :<C-u>Unite -buffer-name=find -start-insert find:.<CR>
 " Quick commands
 nnoremap <silent> [unite]c :<C-u>Unite -buffer-name=commands -start-insert command<CR>
-" Quick bookmarks
-nnoremap <silent> [unite]b :<C-u>Unite -buffer-name=bookmarks bookmark<CR>
+" Quick buffers
+nnoremap <silent> [unite]b :<C-u>Unite -buffer-name=buffers -quick-match buffer<CR>
 " Quick commands
 nnoremap <silent> [unite]; :<C-u>Unite -buffer-name=history history/command command<CR>
 
