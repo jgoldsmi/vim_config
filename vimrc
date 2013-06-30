@@ -307,17 +307,17 @@ nnoremap <silent> [unite]d
 " Quick file search
 nnoremap <silent> [unite]f :<C-u>Unite -buffer-name=files -start-insert file_rec/async file/new<CR>
 " Quick grep from cwd
-nnoremap <silent> [unite]g :<C-u>Unite -buffer-name=grep grep:.<CR>
+nnoremap <silent> [unite]g :<C-u>Unite -buffer-name=grep -start-insert grep:.<CR>
 " Quick help
-nnoremap <silent> [unite]h :<C-u>Unite -buffer-name=help help<CR>
+nnoremap <silent> [unite]h :<C-u>Unite -buffer-name=help -start-insert help<CR>
 " Quick line using the word under cursor
 nnoremap <silent> [unite]l :<C-u>UniteWithCursorWord -buffer-name=search_file line<CR>
 " Quick MRU search
 nnoremap <silent> [unite]m :<C-u>Unite -buffer-name=mru file_mru<CR>
 " Quick find
-nnoremap <silent> [unite]n :<C-u>Unite -buffer-name=find find:.<CR>
+nnoremap <silent> [unite]n :<C-u>Unite -buffer-name=find -start-insert find:.<CR>
 " Quick commands
-nnoremap <silent> [unite]c :<C-u>Unite -buffer-name=commands command<CR>
+nnoremap <silent> [unite]c :<C-u>Unite -buffer-name=commands -start-insert command<CR>
 " Quick bookmarks
 nnoremap <silent> [unite]b :<C-u>Unite -buffer-name=bookmarks bookmark<CR>
 " Quick commands
