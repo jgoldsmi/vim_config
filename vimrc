@@ -20,7 +20,7 @@ call neobundle#rc(expand("~/.vim/bundle"))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 "==============================================================================
-" NeoBundle Listing
+" NeoBundle Listings
 "==============================================================================
 
 NeoBundle 'Shougo/vimproc', {
@@ -202,6 +202,7 @@ call unite#filters#matcher_default#use(['matcher_fuzzy'])
 call unite#filters#sorter_default#use(['sorter_rank'])
 let g:unite_source_history_yank_enable = 1
 let g:unite_update_time = 200
+let g:unite_source_file_mru_limit = 1000
 if executable('ack-grep')
     let g:unite_source_grep_command = 'ack-grep'
     let g:unite_source_grep_default_opts = '--noheading --nocolor'
@@ -211,8 +212,6 @@ elseif executable('ack')
     let g:unite_source_grep_default_opts = '--noheading --nocolor'
     let g:unite_source_grep_recursive_opt = ''
 endif
-
-
 
 "==============================================================================
 " Custom functions
@@ -276,7 +275,7 @@ vnoremap < <gv
 "==============================================================================
 " Unite Mappings
 "==============================================================================
-nnoremap [unite] <Nop>
+nnoremap [unite] <Nop> " Everything unite starts with space
 nmap <space> [unite]
 
 " General fuzzy search
