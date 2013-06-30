@@ -61,6 +61,7 @@ NeoBundle 'maxbrunsfeld/vim-yankstack'
 NeoBundle 'mattn/zencoding-vim'
 NeoBundle 'weiss/textgenshi.vim'
 NeoBundle 'vim-perl/vim-perl'
+NeoBundle 'vim-ruby/vim-ruby'
 
 syntax on
 filetype plugin indent on
