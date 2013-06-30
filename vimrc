@@ -109,6 +109,7 @@ set tildeop
 set gdefault
 set laststatus=2
 set nostartofline
+set history=10000
 set backspace=eol,indent,start
 set mouse=a
 set noshowmode
