@@ -234,3 +234,9 @@ map! <S-Insert> <MiddleMouse>
 " Keep selection selected when indenting
 vnoremap > >gv
 vnoremap < <gv
+
+" Local overrides for work etc
+try
+    source ~/.vimrc-local
+catch
+endtry
