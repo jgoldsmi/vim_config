@@ -133,36 +133,48 @@ set wildmode=list:longest
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/* "VCS directories
 set wildignore+=*.pyc
 set wildignore+=*.so,*.swp,*.pdf,*.dmg,*DS_Store*
-
-" syntastic options
-let g:syntastic_enable_signs=1
-
-" Restore file position
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 
+"==============================================================================
+" syntastic options
+"==============================================================================
+let g:syntastic_enable_signs=1
+
+"==============================================================================
 " ack options
+"==============================================================================
 if executable("ack-grep")
     let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 endif
 
+"==============================================================================
 " C settings
+"==============================================================================
 au FileType c setl cin ts=4 sts=4 sw=4 fo=crql
 
+"==============================================================================
 " Perl settings
+"==============================================================================
 let perl_include_pod = 1
 au FileType perl setl et sts=4 ts=4 sw=4
 
+"==============================================================================
 " Erlang settings
+"==============================================================================
 let g:erlangHighlightBIFs = 1
 let g:erlangCompleteFile="~/.vim/bundle/vimerl/autoload/erlang_complete.erl"
 let g:erlangCheckFile="~/.vim/bundle/vimerl/compiler/erlang_check.erl"
 let g:erlangCompletionGrep="zgrep"
 let g:erlangManSuffix="erl\.gz"
 
+"==============================================================================
 " Java settings
+"==============================================================================
 au FileType java setl cin ts=4 sw=4 sts=4 fo=crql
 
+"==============================================================================
 " Python settings
+"==============================================================================
 au FileType python setl sta ts=4 sw=4 sts=4 fo=crql
 let python_highlight_all = 1
 au BufRead,BufNewFile *.mako  set ft=mako
@@ -185,7 +197,9 @@ augroup filetypedetect
     autocmd BufNewFile,BufRead *.genshi setfiletype textgenshi
 augroup END
 
+"==============================================================================
 " PHP settings
+"==============================================================================
 au FileType php setl et sw=2 ts=2 sts=2 ai si isk-=$
 au BufRead,BufNewFile *.module  set ft=php
 au BufRead,BufNewFile *.install set ft=php
@@ -197,17 +211,25 @@ let php_baselib                       = 1 "Hilight baselib functions
 let php_parent_error_close            = 1
 let php_parent_error_open             = 1
 
+"==============================================================================
 " Shell settings
+"==============================================================================
 au FileType sh setl et sw=4 ts=4 sts=4 ai si
 let g:is_bash = 1
 
+"==============================================================================
 " Ruby settings
+"==============================================================================
 au FileType ruby setl et sw=2 ts=2 sts=2 ai si
 
+"==============================================================================
 " Markdown settings
+"==============================================================================
 au FileType markdown setl et spell tw=80
 
+"==============================================================================
 " Expand region settings
+"==============================================================================
 call expand_region#custom_text_objects({
       \ 'a]' :1,
       \ 'ab' :1,
@@ -216,7 +238,9 @@ call expand_region#custom_text_objects({
       \ 'ai' :0,
       \ })
 
+"==============================================================================
 " Unite Settings
+"==============================================================================
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 call unite#filters#sorter_default#use(['sorter_rank'])
 let g:unite_source_history_yank_enable = 1
