@@ -132,6 +132,7 @@ set wildmenu
 set wildmode=list:longest
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/* "VCS directories
 set wildignore+=*.pyc
+set wildignore+=*.so,*.swp,*.pdf,*.dmg,*DS_Store*
 
 " syntastic options
 let g:syntastic_enable_signs=1
