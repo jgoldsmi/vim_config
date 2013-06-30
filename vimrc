@@ -111,6 +111,7 @@ set listchars=eol:¬,tab:»=,trail:·,extends:»,precedes:« list
 set cursorline
 set wildmenu
 set wildmode=list:longest
+set completeopt=menuone,longest,preview
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/* "VCS directories
 set wildignore+=*.pyc
 
@@ -124,9 +125,6 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 if executable("ack-grep")
     let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 endif
-
-" completion settings
-set completeopt=menuone,longest,preview
 
 " C settings
 au FileType c setl cin ts=4 sts=4 sw=4 fo=crql
