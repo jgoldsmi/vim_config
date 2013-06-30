@@ -205,6 +205,15 @@ au FileType ruby setl et sw=2 ts=2 sts=2 ai si
 " Markdown settings
 au FileType markdown setl et spell tw=80
 
+" Expand region settings
+call expand_region#custom_text_objects({
+      \ 'a]' :1,
+      \ 'ab' :1,
+      \ 'aB' :1,
+      \ 'ii' :0,
+      \ 'ai' :0,
+      \ })
+
 " Unite Settings
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 call unite#filters#sorter_default#use(['sorter_rank'])
