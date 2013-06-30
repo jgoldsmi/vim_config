@@ -40,11 +40,6 @@ Bundle 'maxbrunsfeld/vim-yankstack'
 Bundle 'mattn/zencoding-vim'
 Bundle 'weiss/textgenshi.vim'
 Bundle 'vim-perl/vim-perl'
-" Vim organizer and dependencies
-Bundle 'calendar.vim--Matsumoto'
-Bundle 'chrisbra/NrrwRgn'
-Bundle 'utl.vim'
-Bundle 'hsitz/VimOrganizer'
 
 
 syntax on
@@ -93,9 +88,6 @@ set wildignore+=*.pyc
 "YankStack
 nmap <leader>p <Plug>yankstack_substitute_older_paste
 nmap <leader>P <Plug>yankstack_substitute_newer_paste
-
-" VimOrganizer options
-au BufEnter *.org call org#SetOrgFileType()
 
 " syntastic options
 let g:syntastic_enable_signs=1
