@@ -49,7 +49,6 @@ NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tpope/vim-eunuch'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'tomtom/tcomment_vim'
-NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'terryma/vim-expand-region'
 NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'majutsushi/tagbar'
@@ -61,7 +60,6 @@ NeoBundle 'othree/xml.vim'
 NeoBundle 'sophacles/vim-bundle-mako'
 NeoBundle 'elzr/vim-json'
 NeoBundle 'fakeclip'
-NeoBundle 'maxbrunsfeld/vim-yankstack'
 NeoBundle 'mattn/zencoding-vim'
 NeoBundle 'weiss/textgenshi.vim'
 NeoBundle 'vim-perl/vim-perl'
@@ -115,10 +113,6 @@ set wildmenu
 set wildmode=list:longest
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/* "VCS directories
 set wildignore+=*.pyc
-
-"YankStack
-nmap <leader>p <Plug>yankstack_substitute_older_paste
-nmap <leader>P <Plug>yankstack_substitute_newer_paste
 
 " syntastic options
 let g:syntastic_enable_signs=1
@@ -196,10 +190,22 @@ au FileType ruby setl et sw=2 ts=2 sts=2 ai si
 " Markdown settings
 au FileType markdown setl et spell tw=80
 
-" CtrlP settings
-let g:ctrlp_max_height = 30
-let g:ctrlp_show_hidden = 1
-let g:ctrlp_open_new_file = 'r'
+" Unite Settings
+call unite#filters#matcher_default#use(['matcher_fuzzy'])
+call unite#filters#sorter_default#use(['sorter_rank'])
+let g:unite_source_history_yank_enable = 1
+let g:unite_update_time = 200
+if executable('ack-grep')
+    let g:unite_source_grep_command = 'ack-grep'
+    let g:unite_source_grep_default_opts = '--noheading --nocolor'
+    let g:unite_source_grep_recursive_opt = ''
+elseif executable('ack')
+    let g:unite_source_grep_command = 'ack'
+    let g:unite_source_grep_default_opts = '--noheading --nocolor'
+    let g:unite_source_grep_recursive_opt = ''
+endif
+
+
 
 "==============================================================================
 " Custom functions
@@ -261,6 +267,47 @@ map! <S-Insert> <MiddleMouse>
 " Keep selection selected when indenting
 vnoremap > >gv
 vnoremap < <gv
+
+"==============================================================================
+" Unite Mappings
+"==============================================================================
+nnoremap [unite] <Nop>
+nmap <space> [unite]
+
+" General fuzzy search
+nnoremap <silent> [unite]<space> :<C-u>Unite
+      \ -buffer-name=files -start-insert buffer file_mru bookmark file_rec/async<CR>
+" Quick registers
+nnoremap <silent> [unite]r :<C-u>Unite -buffer-name=register register<CR>
+" Quick buffer and mru
+nnoremap <silent> [unite]u :<C-u>Unite -buffer-name=buffers buffer file_mru<CR>
+" Quick yank history
+nnoremap <silent> [unite]y :<C-u>Unite -buffer-name=yanks history/yank<CR>
+" Quick outline
+nnoremap <silent> [unite]o :<C-u>Unite -buffer-name=outline -vertical outline<CR>
+" Quick sources
+nnoremap <silent> [unite]a :<C-u>Unite -buffer-name=sources source<CR>
+" Quick snippet
+nnoremap <silent> [unite]s :<C-u>Unite -buffer-name=snippets snippet<CR>
+" Quickly switch lcd
+nnoremap <silent> [unite]d
+      \ :<C-u>Unite -buffer-name=change-cwd -default-action=lcd directory_mru<CR>
+" Quick file search
+nnoremap <silent> [unite]f :<C-u>Unite -buffer-name=files -start-insert file_rec/async file/new<CR>
+" Quick grep from cwd
+nnoremap <silent> [unite]g :<C-u>Unite -buffer-name=grep grep:.<CR>
+" Quick help
+nnoremap <silent> [unite]h :<C-u>Unite -buffer-name=help help<CR>
+" Quick line using the word under cursor
+nnoremap <silent> [unite]l :<C-u>UniteWithCursorWord -buffer-name=search_file line<CR>
+" Quick MRU search
+nnoremap <silent> [unite]m :<C-u>Unite -buffer-name=mru file_mru<CR>
+" Quick find
+nnoremap <silent> [unite]n :<C-u>Unite -buffer-name=find find:.<CR>
+" Quick commands
+nnoremap <silent> [unite]c :<C-u>Unite -buffer-name=commands command<CR>
+" Quick bookmarks
+nnoremap <silent> [unite]b :<C-u>Unite -buffer-name=bookmarks bookmark<CR>
 
 " Local overrides for work etc
 try
