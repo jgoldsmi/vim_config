@@ -1,49 +1,64 @@
 filetype off
 set nocp
 
-" Get vundle from github if not installed
+" Get neobundle from github if not installed
+let g:bundle_dir = "~/.vim/bundle/neobundle.vim"
 if !isdirectory("~/.vim/bundle/vundle")
-    call system("git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle")
+    call system("git clone git://github.com/Shougo/neobundle.vim " . g:bundle_dir)
 endif
 
-set runtimepath+=~/.vim/bundle/vundle
-call vundle#rc()
+if has('vim_starting')
+    set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
 
-Bundle 'gmarik/vundle'
+call neobundle#rc(expand("~/.vim/bundle"))
 
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'Valloric/MatchTagAlways'
-Bundle 'tpope/vim-abolish'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-markdown'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'tpope/vim-eunuch'
-Bundle 'mileszs/ack.vim'
-Bundle 'tomtom/tcomment_vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'terryma/vim-expand-region'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'majutsushi/tagbar'
-Bundle 'klen/python-mode'
-Bundle 'godlygeek/tabular'
-Bundle 'scrooloose/syntastic'
-Bundle 'tyru/current-func-info.vim'
-Bundle 'othree/xml.vim'
-Bundle 'sophacles/vim-bundle-mako'
-Bundle 'elzr/vim-json'
-Bundle 'fakeclip'
-Bundle 'maxbrunsfeld/vim-yankstack'
-Bundle 'mattn/zencoding-vim'
-Bundle 'weiss/textgenshi.vim'
-Bundle 'vim-perl/vim-perl'
+NeoBundleFetch 'Shougo/neobundle.vim'
 
+NeoBundle 'Shougo/vimproc', {
+      \ 'build' : {
+      \     'windows' : 'make -f make_mingw32.mak',
+      \     'cygwin' : 'make -f make_cygwin.mak',
+      \     'mac' : 'make -f make_mac.mak',
+      \     'unix' : 'make -f make_unix.mak',
+      \    },
+      \ }
+
+NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'Valloric/YouCompleteMe'
+NeoBundle 'Valloric/MatchTagAlways'
+NeoBundle 'tpope/vim-abolish'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'tpope/vim-markdown'
+NeoBundle 'tpope/vim-repeat'
+NeoBundle 'tpope/vim-unimpaired'
+NeoBundle 'tpope/vim-eunuch'
+NeoBundle 'mileszs/ack.vim'
+NeoBundle 'tomtom/tcomment_vim'
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'terryma/vim-expand-region'
+NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle 'majutsushi/tagbar'
+NeoBundle 'klen/python-mode'
+NeoBundle 'godlygeek/tabular'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'tyru/current-func-info.vim'
+NeoBundle 'othree/xml.vim'
+NeoBundle 'sophacles/vim-bundle-mako'
+NeoBundle 'elzr/vim-json'
+NeoBundle 'fakeclip'
+NeoBundle 'maxbrunsfeld/vim-yankstack'
+NeoBundle 'mattn/zencoding-vim'
+NeoBundle 'weiss/textgenshi.vim'
+NeoBundle 'vim-perl/vim-perl'
 
 syntax on
 filetype plugin indent on
+
+NeoBundleCheck
+
 set backup backupdir=~/.vim/backup
 set directory=~/.vim/tmp
 set omnifunc=syntaxcomplete#Complete
