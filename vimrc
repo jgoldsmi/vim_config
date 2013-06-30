@@ -275,24 +275,36 @@ augroup END " }
 "==============================================================================
 " Custom mappings
 "==============================================================================
+
 " Use comma as leader everywhere
 let mapleader = ","
 let g:mapleader = ","
 let maplocalleader = ","
 let g:maplocalleader = ","
-nmap <leader>t :TagbarToggle<CR>
-"  In visual mode when you press * or # to search for the current selection
-vnoremap <silent> * :call VisualSearch('f')<CR>
-vnoremap <silent> # :call VisualSearch('b')<CR>
-vnoremap <silent> gv :call VisualSearch('gv')<CR>
-" Smart way to move b/w windows
+
+" Make shift-insert work like in Xterm
+map <S-Insert> <MiddleMouse>
+map! <S-Insert> <MiddleMouse>
+
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
-" Make shift-insert work like in Xterm
-map <S-Insert> <MiddleMouse>
-map! <S-Insert> <MiddleMouse>
+"==============================================================================
+" Normal Mode Mappings
+"==============================================================================
+nnoremap <leader>o :only<CR>
+nnoremap <leader>p "set paste!<CR>
+nnoremap <leader>t :TagbarToggle<CR>
+
+"==============================================================================
+" Visual Mode Mappings
+"==============================================================================
+
+"  In visual mode when you press * or # to search for the current selection
+vnoremap <silent> * :call VisualSearch('f')<CR>
+vnoremap <silent> # :call VisualSearch('b')<CR>
+vnoremap <silent> gv :call VisualSearch('gv')<CR>
 " Keep selection selected when indenting
 vnoremap > >gv
 vnoremap < <gv
