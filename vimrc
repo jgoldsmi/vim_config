@@ -243,6 +243,7 @@ call expand_region#custom_text_objects({
 "==============================================================================
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 call unite#filters#sorter_default#use(['sorter_rank'])
+call unite#custom#profile('files', 'smartcase', 1)
 let g:unite_source_history_yank_enable = 1
 let g:unite_update_time = 200
 let g:unite_source_file_mru_limit = 1000
