@@ -334,6 +334,11 @@ nnoremap _ :split<CR>
 nnoremap <bar> :vsplit<CR>
 nnoremap <leader>d :bd<CR>
 nnoremap <leader>e :Errors<CR>
+" Fugitive bindings
+nnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>gg :Gstatus<CR>
+nnoremap <leader>gw :Gwrite<CR>
+
 map K <Plug>(expand_region_expand)
 map J <Plug>(expand_region_shrink)
 nnoremap <leader>o :only<CR>
