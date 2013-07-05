@@ -51,6 +51,7 @@ NeoBundle 'elzr/vim-json'
 
 " Programming
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'majutsushi/tagbar'
