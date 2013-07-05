@@ -330,11 +330,16 @@ map <C-l> <C-W>l
 "==============================================================================
 " Normal Mode Mappings
 "==============================================================================
+nnoremap _ :split<CR>
+nnoremap <bar> :vsplit<CR>
 nnoremap <leader>d :bd<CR>
 nnoremap <leader>e :Errors<CR>
+map K <Plug>(expand_region_expand)
+map J <Plug>(expand_region_shrink)
 nnoremap <leader>o :only<CR>
 nnoremap <leader>p :set paste!<CR>
 nnoremap <leader>t :TagbarToggle<CR>
+nnoremap <leader>w <C-w>w
 
 "==============================================================================
 " Visual Mode Mappings
