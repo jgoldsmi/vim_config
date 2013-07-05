@@ -65,6 +65,7 @@ NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'mattn/zencoding-vim'
+NeoBundle 'mbbill/undotree'
 
 " Text objects
 NeoBundle 'terryma/vim-expand-region'
@@ -135,6 +136,10 @@ set wildignore+=*/.git/*,*/.hg/*,*/.svn/* "VCS directories
 set wildignore+=*.pyc
 set wildignore+=*.so,*.swp,*.pdf,*.dmg,*DS_Store*
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+
+if has("persistent_undo")
+    set undodir=~/.vim/tmp undofile
+endif
 
 "==============================================================================
 " YouCompleteMe options
