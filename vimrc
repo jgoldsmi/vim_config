@@ -275,7 +275,13 @@ call unite#custom#profile('files', 'smartcase', 1)
 let g:unite_source_history_yank_enable = 1
 let g:unite_update_time = 200
 let g:unite_source_file_mru_limit = 1000
-if executable('ack-grep')
+
+" Prefer the_silver_searcher, but fallback to ack-grep
+if executable('ag')
+    let g:unite_source_grep_command = 'ag'
+    let g:unite_source_grep_default_opts = '--noheading --nocolor'
+    let g:unite_source_grep_recursive_opt = ''
+elseif executable('ack-grep')
     let g:unite_source_grep_command = 'ack-grep'
     let g:unite_source_grep_default_opts = '--noheading --nocolor'
     let g:unite_source_grep_recursive_opt = ''
