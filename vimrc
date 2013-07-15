@@ -250,6 +250,11 @@ au FileType ruby setl et sw=2 ts=2 sts=2 ai si
 au FileType markdown setl et spell tw=80
 
 "==============================================================================
+" Puppet settings
+"==============================================================================
+au FileType puppet setl et sw=2 ts=2 sts=2
+
+"==============================================================================
 " Expand region settings
 "==============================================================================
 call expand_region#custom_text_objects({
