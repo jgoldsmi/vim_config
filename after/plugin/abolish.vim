@@ -9,3 +9,4 @@ Abolish teh the
 Abolish taht that
 Abolish thign{,s} thing{}
 Abolish issuse issues
+Abolish thansk thanks
