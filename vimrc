@@ -348,10 +348,6 @@ let g:maplocalleader = ","
 map <S-Insert> <MiddleMouse>
 map! <S-Insert> <MiddleMouse>
 
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
 "==============================================================================
 " Normal Mode Mappings
 "==============================================================================
@@ -364,8 +360,8 @@ nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gg :Gstatus<CR>
 nnoremap <leader>gw :Gwrite<CR>
 
-map K <Plug>(expand_region_expand)
-map J <Plug>(expand_region_shrink)
+map <C-k> <Plug>(expand_region_expand)
+map <C-j> <Plug>(expand_region_shrink)
 nnoremap <leader>o :only<CR>
 nnoremap <leader>t :TagbarToggle<CR>
 nnoremap <leader>w <C-w>w
