@@ -10,3 +10,4 @@ Abolish taht that
 Abolish thign{,s} thing{}
 Abolish issuse issues
 Abolish thansk thanks
+Abolish yuo you
