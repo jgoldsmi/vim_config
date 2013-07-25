@@ -110,7 +110,7 @@ set ignorecase
 set magic
 set ruler
 set smartcase
-set tildeop
+set notildeop
 set gdefault
 set laststatus=2
 set nostartofline
