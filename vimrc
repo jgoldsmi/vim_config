@@ -276,6 +276,7 @@ call unite#custom#profile('files', 'smartcase', 1)
 let g:unite_source_history_yank_enable = 1
 let g:unite_update_time = 200
 let g:unite_source_file_mru_limit = 1000
+let g:unite_source_rec_max_cache_files = 20000
 
 " Prefer the_silver_searcher, but fallback to ack-grep
 if executable('ag')
