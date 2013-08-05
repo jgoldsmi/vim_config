@@ -50,6 +50,7 @@ NeoBundle 'othree/xml.vim'
 NeoBundle 'Valloric/MatchTagAlways'
 NeoBundle 'tpope/vim-markdown'
 NeoBundle 'elzr/vim-json'
+NeoBundle 'smerrill/vcl-vim-plugin'
 
 " Programming
 NeoBundle 'tpope/vim-fugitive'
