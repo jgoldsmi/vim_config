@@ -84,7 +84,7 @@ NeoBundle 'lucapette/vim-textobj-underscore' " a_, i_
 
 " Display
 NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'Lokaltog/powerline', {'rev': 'develop', 'rtp': 'powerline/bindings/vim'}
+NeoBundle 'bling/vim-airline'
 NeoBundle 'tyru/current-func-info.vim'
 NeoBundle 'fakeclip'
 
