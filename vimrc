@@ -51,6 +51,7 @@ NeoBundle 'Valloric/MatchTagAlways'
 NeoBundle 'tpope/vim-markdown'
 NeoBundle 'elzr/vim-json'
 NeoBundle 'smerrill/vcl-vim-plugin'
+NeoBundle 'chrisbra/csv.vim'
 
 " Programming
 NeoBundle 'tpope/vim-fugitive'
