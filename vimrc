@@ -66,7 +66,12 @@ NeoBundle 'goldfeld/vim-seek'
 NeoBundle 'tpope/vim-abolish'
 NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tpope/vim-eunuch'
-NeoBundle 'Valloric/YouCompleteMe'
+NeoBundle 'Valloric/YouCompleteMe', {
+    \ 'build' : {
+    \   'mac': './install.sh --clang-completer',
+    \   'unix': './install.sh',
+    \   },
+    \ }
 NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'mattn/zencoding-vim'
