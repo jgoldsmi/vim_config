@@ -55,7 +55,7 @@ NeoBundle 'chrisbra/csv.vim'
 
 " Programming
 NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'mhinz/vim-signify'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'majutsushi/tagbar'
