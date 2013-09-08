@@ -160,6 +160,7 @@ runtime macros/matchit.vim
 " Airline settings
 "===============================================================================
 let g:airline_theme = 'solarized'
+let g:airline#extensions#tabline#enabled = 1
 
 "==============================================================================
 " YouCompleteMe options
