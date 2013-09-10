@@ -32,12 +32,6 @@ NeoBundle 'Shougo/vimproc', {
       \    },
       \ }
 
-" Unite
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/unite-outline'
-NeoBundle 'Shougo/unite-help'
-NeoBundle 'thinca/vim-unite-history'
-
 " Languages
 NeoBundle 'klen/python-mode'
 NeoBundle 'weiss/textgenshi.vim'
@@ -282,40 +276,6 @@ call expand_region#custom_text_objects({
       \ })
 
 "==============================================================================
-" Unite Settings
-"==============================================================================
-call unite#filters#matcher_default#use(['matcher_fuzzy'])
-call unite#filters#sorter_default#use(['sorter_rank'])
-call unite#custom#profile('files', 'smartcase', 1)
-let g:unite_source_history_yank_enable = 1
-let g:unite_update_time = 200
-let g:unite_source_file_mru_limit = 1000
-let g:unite_source_rec_max_cache_files = 20000
-
-" Prefer the_silver_searcher, but fallback to ack-grep
-if executable('ag')
-    let g:unite_source_grep_command = 'ag'
-    let g:unite_source_grep_default_opts = '--noheading --nocolor'
-    let g:unite_source_grep_recursive_opt = ''
-elseif executable('ack-grep')
-    let g:unite_source_grep_command = 'ack-grep'
-    let g:unite_source_grep_default_opts = '--noheading --nocolor'
-    let g:unite_source_grep_recursive_opt = ''
-elseif executable('ack')
-    let g:unite_source_grep_command = 'ack'
-    let g:unite_source_grep_default_opts = '--noheading --nocolor'
-    let g:unite_source_grep_recursive_opt = ''
-endif
-
-" Make quickmatch easier for colemak
-let g:unite_quick_match_table =
-      \ {
-      \     'a' : 0, 'r' : 1, 's' : 2, 't' : 3, 'd' : 4, 'h' : 5, 'n' : 6, 'e' : 7, 'i' : 8, 'o' : 9,
-      \     'q' : 10, 'w' : 11, 'f' : 12, 'p' : 13, 'g' : 14, 'j' : 15, 'l' : 16, 'u' : 17, 'y' : 18, ';' : 19,
-      \     '1' : 20, '2' : 21, '3' : 22, '4' : 23, '5' : 24, '6' : 25, '7' : 26, '8' : 27, '9' : 28, '0' : 29,
-      \ }
-
-"==============================================================================
 " Custom functions
 "==============================================================================
 function! CmdLine(str)
@@ -392,49 +352,6 @@ vnoremap <silent> gv :call VisualSearch('gv')<CR>
 " Keep selection selected when indenting
 vnoremap > >gv
 vnoremap < <gv
-
-"==============================================================================
-" Unite Mappings
-"==============================================================================
-nnoremap [unite] <Nop> " Everything unite starts with space
-nmap <space> [unite]
-
-" General fuzzy search
-nnoremap <silent> [unite]<space> :<C-u>Unite
-      \ -buffer-name=files -start-insert buffer file_mru bookmark file_rec/async<CR>
-" Quick registers
-nnoremap <silent> [unite]r :<C-u>Unite -buffer-name=register register<CR>
-" Quick buffer and mru
-nnoremap <silent> [unite]u :<C-u>Unite -buffer-name=buffers buffer file_mru<CR>
-" Quick yank history
-nnoremap <silent> [unite]y :<C-u>Unite -buffer-name=yanks history/yank<CR>
-" Quick outline
-nnoremap <silent> [unite]o :<C-u>Unite -buffer-name=outline -vertical outline<CR>
-" Quick sources
-nnoremap <silent> [unite]a :<C-u>Unite -buffer-name=sources source<CR>
-" Quick snippet
-nnoremap <silent> [unite]s :<C-u>Unite -buffer-name=snippets snippet<CR>
-" Quickly switch lcd
-nnoremap <silent> [unite]d
-      \ :<C-u>Unite -buffer-name=change-cwd -default-action=lcd directory_mru<CR>
-" Quick file search
-nnoremap <silent> [unite]f :<C-u>Unite -buffer-name=files -start-insert file_rec/async file/new<CR>
-" Quick grep from cwd
-nnoremap <silent> [unite]g :<C-u>Unite -buffer-name=grep -start-insert grep:.<CR>
-" Quick help
-nnoremap <silent> [unite]h :<C-u>Unite -buffer-name=help -start-insert help<CR>
-" Quick line using the word under cursor
-nnoremap <silent> [unite]l :<C-u>UniteWithCursorWord -buffer-name=search_file line<CR>
-" Quick MRU search
-nnoremap <silent> [unite]m :<C-u>Unite -buffer-name=mru file_mru<CR>
-" Quick find
-nnoremap <silent> [unite]n :<C-u>Unite -buffer-name=find -start-insert find:.<CR>
-" Quick commands
-nnoremap <silent> [unite]c :<C-u>Unite -buffer-name=commands -start-insert command<CR>
-" Quick buffers
-nnoremap <silent> [unite]b :<C-u>Unite -buffer-name=buffers -quick-match buffer<CR>
-" Quick commands
-nnoremap <silent> [unite]; :<C-u>Unite -buffer-name=history history/command command<CR>
 
 " Local overrides for work etc
 try
