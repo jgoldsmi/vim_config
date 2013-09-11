@@ -277,6 +277,14 @@ call expand_region#custom_text_objects({
       \ })
 
 "==============================================================================
+" CtrlP Settings
+"==============================================================================
+let g:ctrlp_map = '<leader>pp'
+let g:ctrlp_match_window = 'min:1,max:25,results:50'
+let g:ctrlp_extensions = ['buffertag', 'tag', 'undo']
+let g:ctrlp_open_multiple_files = '1ij'
+
+"==============================================================================
 " Custom functions
 "==============================================================================
 function! CmdLine(str)
@@ -339,6 +347,11 @@ nnoremap <leader>gw :Gwrite<CR>
 map <C-k> <Plug>(expand_region_expand)
 map <C-j> <Plug>(expand_region_shrink)
 nnoremap <leader>o :only<CR>
+" CtrlP Bindings
+nnoremap <leader>pb :CtrlPBuffer<CR>
+nnoremap <leader>pm :CtrlPMRU<CR>
+nnoremap <leader>pt :CtrlPBufTag<CR>
+nnoremap <leader>pu :CtrlPUndo<CR>
 nnoremap <leader>t :TagbarToggle<CR>
 nnoremap <leader>w <C-w>w
 
