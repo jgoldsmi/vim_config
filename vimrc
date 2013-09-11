@@ -68,6 +68,12 @@ NeoBundle 'Valloric/YouCompleteMe', {
     \   'unix': './install.sh',
     \   },
     \ }
+NeoBundle 'marijnh/tern_for_vim', {
+    \ 'build' : {
+    \   'mac': 'which npm && npm install',
+    \   'unix': 'which npm && npm install',
+    \   },
+    \ }
 NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'mattn/zencoding-vim'
