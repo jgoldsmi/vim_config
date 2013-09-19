@@ -126,6 +126,7 @@ set nostartofline
 set history=10000
 set backspace=eol,indent,start
 set mouse=a
+set shortmess+=I
 set noshowmode
 set showmatch matchtime=5
 set showcmd
