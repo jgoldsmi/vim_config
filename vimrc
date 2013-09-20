@@ -138,7 +138,7 @@ set scrolloff=5
 set wrap
 set vb t_vb=
 set t_Co=256
-set background=light
+set background=dark
 colorscheme solarized
 call togglebg#map("<F5>") "Uses <F5> to switch b/w light and dark
 set listchars=eol:¬,tab:»=,trail:·,extends:»,precedes:«
