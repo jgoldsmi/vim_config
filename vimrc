@@ -47,6 +47,7 @@ NeoBundle 'elzr/vim-json'
 NeoBundle 'smerrill/vcl-vim-plugin'
 NeoBundle 'chrisbra/csv.vim'
 NeoBundle 'leafgarland/typescript-vim'
+NeoBundle 'digitaltoad/vim-jade'
 
 " Programming
 NeoBundle 'tpope/vim-fugitive'
