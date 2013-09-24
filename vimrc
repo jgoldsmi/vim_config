@@ -122,7 +122,6 @@ set magic
 set ruler
 set smartcase
 set notildeop
-set gdefault
 set laststatus=2
 set nostartofline
 set history=10000
