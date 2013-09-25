@@ -363,7 +363,7 @@ nnoremap <leader>pt :CtrlPBufTag<CR>
 nnoremap <leader>pu :CtrlPUndo<CR>
 nnoremap <leader>t :TagbarToggle<CR>
 nnoremap <leader>w <C-w>w
-
+noremap <silent> <C-l> :nohls<CR><C-l>
 "==============================================================================
 " Visual Mode Mappings
 "==============================================================================
