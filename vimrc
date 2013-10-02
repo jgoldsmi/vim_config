@@ -198,6 +198,7 @@ au FileType c setl cin ts=4 sts=4 sw=4 fo=crql
 let perl_include_pod = 1
 au FileType perl setl et sts=4 ts=4 sw=4
 let g:syntastic_perl_perlcritic_thres = 3
+let perl_sync_dist = 300
 
 "==============================================================================
 " Erlang settings
