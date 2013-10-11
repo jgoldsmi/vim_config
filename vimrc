@@ -332,6 +332,17 @@ function! VisualSearch(direction) range
     let @" = l:saved_reg
 endfunction
 
+function! HLNext (blinktime)
+    let [bufnum, lnum, col, off] = getpos('.')
+    let matchlen = strlen(matchstr(strpart(getline('.'),col-1),@/))
+    let target_pat = '\c\%#'.@/
+    let ring = matchadd('Error', target_pat, 101)
+    redraw
+    exec 'sleep ' . float2nr(a:blinktime * 1000) . 'm'
+    call matchdelete(ring)
+    redraw
+endfunction
+
 " Autoreload vimrc if we edit it
 augroup reload_vimrc " {
     autocmd!
@@ -355,6 +366,9 @@ map! <S-Insert> <MiddleMouse>
 "==============================================================================
 " Normal Mode Mappings
 "==============================================================================
+nnoremap ; :
+nnoremap <silent> n   n:call HLNext(0.4)<CR>
+nnoremap <silent> N   N:call HLNext(0.4)<CR>
 nnoremap <bar> :vsplit<CR>
 nnoremap <leader>d :bd<CR>
 nnoremap <leader>e :Errors<CR>
