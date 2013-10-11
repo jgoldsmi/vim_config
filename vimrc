@@ -144,6 +144,7 @@ set listchars=eol:¬,tab:»=,trail:·,extends:»,precedes:«
 set list
 set cursorline
 set completeopt=menuone,longest,preview
+set title
 set wildmenu
 set wildmode=list:longest
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/* "VCS directories
