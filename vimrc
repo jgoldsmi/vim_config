@@ -74,6 +74,7 @@ NeoBundle 'marijnh/tern_for_vim', {
     \   'unix': 'which npm && npm install',
     \   },
     \ }
+NeoBundle 'SirVer/ultisnips'
 NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'mattn/zencoding-vim'
@@ -293,6 +294,13 @@ let g:ctrlp_extensions = ['buffertag', 'tag', 'undo']
 let g:ctrlp_open_multiple_files = '1ij'
 
 "==============================================================================
+" UltiSnips Settings
+"==============================================================================
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
+"==============================================================================
 " Custom functions
 "==============================================================================
 function! CmdLine(str)
@@ -343,7 +351,6 @@ map! <S-Insert> <MiddleMouse>
 "==============================================================================
 " Normal Mode Mappings
 "==============================================================================
-nnoremap _ :split<CR>
 nnoremap <bar> :vsplit<CR>
 nnoremap <leader>d :bd<CR>
 nnoremap <leader>e :Errors<CR>
@@ -352,14 +359,13 @@ nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gg :Gstatus<CR>
 nnoremap <leader>gw :Gwrite<CR>
 
-map <C-k> <Plug>(expand_region_expand)
-map <C-j> <Plug>(expand_region_shrink)
 nnoremap <leader>o :only<CR>
 " CtrlP Bindings
 nnoremap <leader>pb :CtrlPBuffer<CR>
 nnoremap <leader>pm :CtrlPMRU<CR>
 nnoremap <leader>pt :CtrlPBufTag<CR>
 nnoremap <leader>pu :CtrlPUndo<CR>
+nnoremap <leader>sp :split<CR>
 nnoremap <leader>t :TagbarToggle<CR>
 nnoremap <leader>w <C-w>w
 noremap <silent> <C-l> :nohls<CR><C-l>
