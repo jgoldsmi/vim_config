@@ -120,6 +120,7 @@ set hlsearch
 set ignorecase
 set magic
 set ruler
+set formatoptions+=j
 set smartcase
 set notildeop
 set laststatus=2
@@ -195,7 +196,7 @@ endif
 "==============================================================================
 " C settings
 "==============================================================================
-au FileType c setl cin ts=4 sts=4 sw=4 fo=crql
+au FileType c setl cin ts=4 sts=4 sw=4
 
 "==============================================================================
 " Perl settings
@@ -217,12 +218,12 @@ let g:erlangManSuffix="erl\.gz"
 "==============================================================================
 " Java settings
 "==============================================================================
-au FileType java setl cin ts=4 sw=4 sts=4 fo=crql
+au FileType java setl cin ts=4 sw=4 sts=4
 
 "==============================================================================
 " Python settings
 "==============================================================================
-au FileType python setl sta ts=4 sw=4 sts=4 fo=crql
+au FileType python setl sta ts=4 sw=4 sts=4
 let python_highlight_all = 1
 au BufRead,BufNewFile *.mako  set ft=mako
 au BufRead,BufNewFile *.html set ft=htmldjango
