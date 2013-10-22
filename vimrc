@@ -189,7 +189,9 @@ let g:syntastic_enable_signs=1
 "==============================================================================
 " ack options
 "==============================================================================
-if executable("ack-grep")
+if executable("ag")
+    let g:ackprg = 'ag --nogroup --nocolor --column'
+elseif executable("ack-grep")
     let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 endif
 
