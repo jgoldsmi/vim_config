@@ -43,10 +43,12 @@ NeoBundle 'rodjek/vim-puppet'
 NeoBundle 'othree/xml.vim'
 NeoBundle 'Valloric/MatchTagAlways'
 NeoBundle 'tpope/vim-markdown'
-NeoBundle 'elzr/vim-json'
+NeoBundle 'jakar/vim-json'
 NeoBundle 'smerrill/vcl-vim-plugin'
 NeoBundle 'chrisbra/csv.vim'
 NeoBundle 'digitaltoad/vim-jade'
+NeoBundle 'moll/vim-node'
+NeoBundle 'pangloss/vim-javascript'
 
 " Programming
 NeoBundle 'tpope/vim-fugitive'
@@ -266,7 +268,7 @@ let php_parent_error_open             = 1
 "==============================================================================
 " Javascript settings
 "==============================================================================
-au FileType javascript setl noet sw=8 ts=8 sts=8 ai ci
+au FileType javascript setl et sw=4 ts=4 sts=4
 
 "==============================================================================
 " Shell settings
