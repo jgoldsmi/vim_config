@@ -273,13 +273,13 @@ au FileType javascript setl et sw=4 ts=4 sts=4
 "==============================================================================
 " Shell settings
 "==============================================================================
-au FileType sh setl et sw=4 ts=4 sts=4 ai si
+au FileType sh setl et sw=4 ts=4 sts=4
 let g:is_bash = 1
 
 "==============================================================================
 " Ruby settings
 "==============================================================================
-au FileType ruby setl et sw=2 ts=2 sts=2 ai si
+au FileType ruby setl et sw=2 ts=2 sts=2
 
 "==============================================================================
 " Markdown settings
