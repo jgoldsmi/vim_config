@@ -33,7 +33,7 @@ NeoBundle 'Shougo/vimproc', {
       \ }
 
 " Languages
-NeoBundle 'klen/python-mode'
+NeoBundle 'klen/python-mode', {'rev': 'master'}
 NeoBundle 'weiss/textgenshi.vim'
 NeoBundle 'sophacles/vim-bundle-mako'
 NeoBundle 'vim-perl/vim-perl'
@@ -233,6 +233,7 @@ au BufRead,BufNewFile *.mako  set ft=mako
 au BufRead,BufNewFile *.html set ft=htmldjango
 let g:pymode_folding = 0
 let g:pymode_lint_ignore = "E501"
+let g:pymode_rope_lookup_project = 0
 " Add the virtualenv's site-packages to vim path
 py << EOF
 import os.path
