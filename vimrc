@@ -94,7 +94,7 @@ NeoBundle 'kana/vim-textobj-indent' " ai, ii, aI, iI
 NeoBundle 'lucapette/vim-textobj-underscore' " a_, i_
 
 " Display
-NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'tomasr/molokai'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'tyru/current-func-info.vim'
 NeoBundle 'fakeclip'
@@ -141,9 +141,9 @@ set scrolloff=5
 set wrap
 set vb t_vb=
 set t_Co=256
-set background=light
-colorscheme solarized
-call togglebg#map("<F5>") "Uses <F5> to switch b/w light and dark
+set background=dark
+let g:rehash256 = 1
+colorscheme molokai
 set listchars=eol:¬,tab:→\ ,trail:·,extends:»,precedes:«
 set list
 set cursorline
@@ -171,7 +171,7 @@ runtime macros/matchit.vim
 "==============================================================================
 " Airline settings
 "==============================================================================
-let g:airline_theme = 'solarized'
+let g:airline_theme = 'molokai'
 let g:airline#extensions#tabline#enabled = 1
 
 "==============================================================================
