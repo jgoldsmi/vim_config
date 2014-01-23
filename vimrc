@@ -65,12 +65,7 @@ NeoBundle 'goldfeld/vim-seek'
 NeoBundle 'tpope/vim-abolish'
 NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tpope/vim-eunuch'
-NeoBundle 'Valloric/YouCompleteMe', {
-    \ 'build' : {
-    \   'mac': './install.sh --clang-completer',
-    \   'unix': './install.sh',
-    \   },
-    \ }
+NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'marijnh/tern_for_vim', {
     \ 'build' : {
     \   'mac': 'which npm && npm install',
@@ -183,7 +178,8 @@ let g:ycm_filetype_blacklist = {
             \ 'markdown' : 1,
             \ 'text' : 1,
             \}
-
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
 "==============================================================================
 " syntastic options
 "==============================================================================
@@ -232,20 +228,11 @@ au FileType python setl sta ts=4 sw=4 sts=4
 let python_highlight_all = 1
 au BufRead,BufNewFile *.mako  set ft=mako
 au BufRead,BufNewFile *.html set ft=htmldjango
-let g:pymode_folding = 0
-let g:pymode_lint_ignore = "E501"
+let g:pymode_folding             = 0
+let g:pymode_lint                = 0
+let g:pymode_rope                = 1
+let g:pymode_rope_completion     = 0
 let g:pymode_rope_lookup_project = 0
-" Add the virtualenv's site-packages to vim path
-py << EOF
-import os.path
-import sys
-import vim
-if 'VIRTUAL_ENV' in os.environ:
-    project_base_dir = os.environ['VIRTUAL_ENV']
-    sys.path.insert(0, project_base_dir)
-    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-    execfile(activate_this, dict(__file__=activate_this))
-EOF
 
 " Genshi settings
 augroup filetypedetect
@@ -329,8 +316,6 @@ augroup reload_vimrc " {
     autocmd BufWritePost $MYVIMRC source $MYVIMRC
 augroup END " }
 
-" Automatically open and close the popup menu / preview window
-au CursorMovedI,InsertLeave * if pumvisible() == 0 | silent! pclose | endif
 "==============================================================================
 " Custom mappings
 "==============================================================================
