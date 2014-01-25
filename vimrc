@@ -94,6 +94,7 @@ NeoBundle 'bling/vim-airline'
 NeoBundle 'tyru/current-func-info.vim'
 NeoBundle 'fakeclip'
 NeoBundle 'ivyl/vim-bling'
+NeoBundle 'sjl/vitality.vim'
 
 syntax on
 filetype plugin indent on
