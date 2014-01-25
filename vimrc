@@ -60,6 +60,7 @@ NeoBundle 'majutsushi/tagbar'
 
 " Editing
 NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'tacahiroy/ctrlp-funky'
 NeoBundle 'justinmk/vim-sneak'
 NeoBundle 'tpope/vim-abolish'
 NeoBundle 'tpope/vim-unimpaired'
@@ -300,7 +301,7 @@ call expand_region#custom_text_objects({
 "==============================================================================
 let g:ctrlp_map = '<leader>pp'
 let g:ctrlp_match_window = 'min:1,max:25,results:50'
-let g:ctrlp_extensions = ['buffertag', 'tag', 'undo']
+let g:ctrlp_extensions = ['buffertag', 'tag', 'undo', 'funky']
 let g:ctrlp_open_multiple_files = '1ij'
 
 "==============================================================================
@@ -351,6 +352,7 @@ nnoremap <leader>pb :CtrlPBuffer<CR>
 nnoremap <leader>pm :CtrlPMRU<CR>
 nnoremap <leader>pt :CtrlPBufTag<CR>
 nnoremap <leader>pu :CtrlPUndo<CR>
+nnoremap <leader>pf :CtrlPFunky<CR>
 nnoremap <leader>sp :split<CR>
 nnoremap <leader>t :TagbarToggle<CR>
 nnoremap <leader>w <C-w>w
