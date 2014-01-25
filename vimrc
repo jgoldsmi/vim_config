@@ -60,8 +60,7 @@ NeoBundle 'majutsushi/tagbar'
 
 " Editing
 NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'Lokaltog/vim-easymotion'
-NeoBundle 'goldfeld/vim-seek'
+NeoBundle 'justinmk/vim-sneak'
 NeoBundle 'tpope/vim-abolish'
 NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tpope/vim-eunuch'
@@ -193,6 +192,12 @@ if executable("ag")
 elseif executable("ack-grep")
     let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 endif
+
+"==============================================================================
+" vim-sneak options
+"==============================================================================
+let g:sneak#streak = 1
+let g:sneak#target_labels = "arstdhneioqwfpgjluyzxcvbkmARSTDHNEIOQWFPGJLUYZXCVBKM"
 
 "==============================================================================
 " C settings
@@ -333,7 +338,6 @@ map! <S-Insert> <MiddleMouse>
 "==============================================================================
 " Normal Mode Mappings
 "==============================================================================
-nnoremap ; :
 nnoremap <bar> :vsplit<CR>
 nnoremap <leader>d :bd<CR>
 nnoremap <leader>e :Errors<CR>
