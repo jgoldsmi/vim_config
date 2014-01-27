@@ -355,6 +355,7 @@ nnoremap <leader>pu :CtrlPUndo<CR>
 nnoremap <leader>pf :CtrlPFunky<CR>
 nnoremap <leader>sp :split<CR>
 nnoremap <leader>t :TagbarToggle<CR>
+nnoremap <leader>u :UndotreeToggle<CR>
 nnoremap <leader>w <C-w>w
 noremap <silent> <C-l> :nohls<CR><C-l>
 "==============================================================================
