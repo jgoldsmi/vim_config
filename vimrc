@@ -77,6 +77,7 @@ NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'mattn/zencoding-vim'
 NeoBundle 'mbbill/undotree'
+NeoBundle 'xolox/vim-notes', {'depends': 'xolox/vim-misc'}
 
 " Text objects
 NeoBundle 'terryma/vim-expand-region'
@@ -310,6 +311,11 @@ let g:ctrlp_open_multiple_files = '1ij'
 let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
+"==============================================================================
+" vim-notes Settings
+"==============================================================================
+let g:notes_directories = ['~/Dropbox/vim-notes']
 
 "==============================================================================
 " Custom functions
