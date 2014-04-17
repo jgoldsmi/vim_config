@@ -234,7 +234,8 @@ au FileType java setl cin ts=4 sw=4 sts=4
 au FileType python setl sta ts=4 sw=4 sts=4
 let python_highlight_all = 1
 au BufRead,BufNewFile *.mako  set ft=mako
-au BufRead,BufNewFile *.html set ft=htmldjango
+au BufRead,BufNewFile *.psp set ft=python
+au BufRead,BufNewFile *.html,*.tpl set ft=htmldjango
 let g:pymode_folding             = 0
 let g:pymode_lint                = 0
 let g:pymode_rope                = 1
