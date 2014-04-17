@@ -182,6 +182,7 @@ let g:ycm_filetype_blacklist = {
             \}
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_show_diagnostics_ui = 0
 "==============================================================================
 " syntastic options
 "==============================================================================
