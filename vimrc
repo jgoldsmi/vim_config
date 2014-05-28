@@ -234,6 +234,7 @@ let g:pymode_lint                = 0
 let g:pymode_rope                = 1
 let g:pymode_rope_completion     = 0
 let g:pymode_rope_lookup_project = 0
+let g:pymode_trim_whitespaces    = 0
 
 " Genshi settings
 augroup filetypedetect
