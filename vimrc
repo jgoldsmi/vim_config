@@ -36,17 +36,13 @@ NeoBundle 'Shougo/vimproc', {
 NeoBundle 'klen/python-mode', {'rev': 'master'}
 NeoBundle 'weiss/textgenshi.vim'
 NeoBundle 'sophacles/vim-bundle-mako'
-NeoBundle 'vim-perl/vim-perl'
-NeoBundle 'c9s/perlomni.vim'
 NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'rodjek/vim-puppet'
 NeoBundle 'othree/xml.vim'
 NeoBundle 'Valloric/MatchTagAlways'
 NeoBundle 'tpope/vim-markdown'
 NeoBundle 'jakar/vim-json'
 NeoBundle 'smerrill/vcl-vim-plugin'
 NeoBundle 'chrisbra/csv.vim'
-NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'moll/vim-node'
 NeoBundle 'pangloss/vim-javascript'
 
@@ -72,12 +68,9 @@ NeoBundle 'marijnh/tern_for_vim', {
     \   'unix': 'which npm && npm install',
     \   },
     \ }
-NeoBundle 'SirVer/ultisnips'
 NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'godlygeek/tabular'
-NeoBundle 'mattn/zencoding-vim'
 NeoBundle 'mbbill/undotree'
-NeoBundle 'xolox/vim-notes', {'depends': 'xolox/vim-misc'}
 
 " Text objects
 NeoBundle 'terryma/vim-expand-region'
@@ -306,13 +299,6 @@ let g:ctrlp_map = '<leader>pp'
 let g:ctrlp_match_window = 'min:1,max:25,results:50'
 let g:ctrlp_extensions = ['buffertag', 'tag', 'undo', 'funky']
 let g:ctrlp_open_multiple_files = '1ij'
-
-"==============================================================================
-" UltiSnips Settings
-"==============================================================================
-let g:UltiSnipsExpandTrigger="<c-j>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 "==============================================================================
 " vim-notes Settings
