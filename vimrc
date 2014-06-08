@@ -48,11 +48,11 @@ NeoBundle 'pangloss/vim-javascript'
 
 " Programming
 NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'mhinz/vim-signify'
+" NeoBundle 'mhinz/vim-signify'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'scrooloose/syntastic'
-NeoBundle 'majutsushi/tagbar'
+" NeoBundle 'majutsushi/tagbar'
 
 " Editing
 NeoBundle 'kien/ctrlp.vim'
