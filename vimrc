@@ -37,7 +37,6 @@ NeoBundle 'klen/python-mode', {'rev': 'master'}
 NeoBundle 'weiss/textgenshi.vim'
 NeoBundle 'sophacles/vim-bundle-mako'
 NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'othree/xml.vim'
 NeoBundle 'Valloric/MatchTagAlways'
 NeoBundle 'tpope/vim-markdown'
 NeoBundle 'jakar/vim-json'
