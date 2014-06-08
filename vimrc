@@ -56,7 +56,7 @@ NeoBundle 'scrooloose/syntastic'
 " Editing
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'tacahiroy/ctrlp-funky'
-NeoBundle 'justinmk/vim-sneak'
+NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'tpope/vim-abolish'
 NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tpope/vim-eunuch'
@@ -188,10 +188,9 @@ if executable("ack-grep")
 endif
 
 "==============================================================================
-" vim-sneak options
+" vim-easymotion options
 "==============================================================================
-let g:sneak#streak = 1
-let g:sneak#target_labels = "arstdhneioqwfpgjluyzxcvbkmARSTDHNEIOQWFPGJLUYZXCVBKM"
+let g:EasyMotion_smartcase = 1
 
 "==============================================================================
 " C settings
@@ -334,6 +333,10 @@ nnoremap <leader>e :Errors<CR>
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gg :Gstatus<CR>
 nnoremap <leader>gw :Gwrite<CR>
+" EasyMotion bindings
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+nmap s <Plug>(easymotion-s2)
 
 nnoremap <leader>o :only<CR>
 " CtrlP Bindings
