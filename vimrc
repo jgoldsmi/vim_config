@@ -6,10 +6,10 @@ set nocp
 "==============================================================================
 
 " Get neobundle from github if not installed
-let g:bundle_dir = "~/.vim/bundle/neobundle.vim"
-if !isdirectory(g:bundle_dir)
-    call system("git clone git://github.com/Shougo/neobundle.vim " . g:bundle_dir)
-endif
+" let g:bundle_dir = "~/.vim/bundle/neobundle.vim"
+" if !isdirectory(g:bundle_dir)
+"     call system("git clone git://github.com/Shougo/neobundle.vim " . g:bundle_dir)
+" endif
 
 if has('vim_starting')
     set runtimepath+=~/.vim/bundle/neobundle.vim/
