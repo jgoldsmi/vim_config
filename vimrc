@@ -47,6 +47,7 @@ NeoBundle 'pangloss/vim-javascript'
 
 " Programming
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'tpope/vim-dispatch'
 " NeoBundle 'mhinz/vim-signify'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'scrooloose/syntastic'
