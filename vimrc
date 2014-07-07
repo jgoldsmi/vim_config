@@ -144,7 +144,10 @@ set wildmode=list:longest
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/* "VCS directories
 set wildignore+=*.pyc
 set wildignore+=*.so,*.swp,*.pdf,*.dmg,*DS_Store*
-au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+au BufReadPost *
+            \ if &ft != 'gitcommit' && line("'\"") > 1 && line("'\"") <= line("$") |
+            \     exe "normal! g`\"" |
+            \ endif
 
 if has("persistent_undo")
     set undodir=~/.vim/tmp undofile
