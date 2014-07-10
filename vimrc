@@ -67,7 +67,7 @@ NeoBundle 'marijnh/tern_for_vim', {
     \   'unix': 'which npm && npm install',
     \   },
     \ }
-NeoBundle 'tomtom/tcomment_vim'
+NeoBundle 'tpope/vim-commentary'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'mbbill/undotree'
 
