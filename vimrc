@@ -44,6 +44,7 @@ NeoBundle 'smerrill/vcl-vim-plugin'
 NeoBundle 'chrisbra/csv.vim'
 NeoBundle 'moll/vim-node'
 NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'dag/vim-fish'
 
 " Programming
 NeoBundle 'tpope/vim-fugitive'
