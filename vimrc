@@ -15,7 +15,7 @@ if has('vim_starting')
     set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-call neobundle#rc(expand("~/.vim/bundle"))
+call neobundle#begin(expand("~/.vim/bundle"))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
@@ -90,6 +90,8 @@ NeoBundle 'tyru/current-func-info.vim'
 NeoBundle 'fakeclip'
 NeoBundle 'ivyl/vim-bling'
 NeoBundle 'sjl/vitality.vim'
+
+call neobundle#end()
 
 syntax on
 filetype plugin indent on
