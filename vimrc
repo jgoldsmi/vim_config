@@ -264,6 +264,7 @@ let php_parent_error_open             = 1
 " Javascript settings
 "==============================================================================
 au FileType javascript setl et sw=4 ts=4 sts=4
+let g:syntastic_javascript_checkers = ['jshint', 'jslint']
 
 "==============================================================================
 " Shell settings
