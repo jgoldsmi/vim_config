@@ -36,7 +36,7 @@ Plug 'groenewege/vim-less'
 " Programming
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-dispatch'
-" Plug 'mhinz/vim-signify'
+Plug 'mhinz/vim-signify'
 Plug 'rking/ag.vim'
 Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
