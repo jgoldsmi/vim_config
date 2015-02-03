@@ -31,6 +31,7 @@ Plug 'chrisbra/csv.vim'
 Plug 'moll/vim-node', { 'for': 'javascript' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'dag/vim-fish'
+Plug 'groenewege/vim-less'
 
 " Programming
 Plug 'tpope/vim-fugitive'
