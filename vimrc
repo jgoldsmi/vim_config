@@ -2,101 +2,80 @@ filetype off
 set nocp
 
 "==============================================================================
-" NeoBundle Setup
+" Plug Setup
 "==============================================================================
 
-" Get neobundle from github if not installed
-" let g:bundle_dir = "~/.vim/bundle/neobundle.vim"
-" if !isdirectory(g:bundle_dir)
-"     call system("git clone git://github.com/Shougo/neobundle.vim " . g:bundle_dir)
-" endif
-
-if has('vim_starting')
-    set runtimepath+=~/.vim/bundle/neobundle.vim/
+" Load vim-plug
+if empty(glob("~/.vim/autoload/plug.vim"))
+    execute '!curl -fLo ~/.vim/autoload/plug.vim https://raw.github.com/junegunn/vim-plug/master/plug.vim'
 endif
 
-call neobundle#begin(expand("~/.vim/bundle"))
-
-NeoBundleFetch 'Shougo/neobundle.vim'
+call plug#begin("~/.vim/plugged")
 
 "==============================================================================
-" NeoBundle Listings
+" Plug Listings
 "==============================================================================
 
-NeoBundle 'Shougo/vimproc', {
-      \ 'build' : {
-      \     'windows' : 'make -f make_mingw32.mak',
-      \     'cygwin' : 'make -f make_cygwin.mak',
-      \     'mac' : 'make -f make_mac.mak',
-      \     'unix' : 'make -f make_unix.mak',
-      \    },
-      \ }
+Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 
 " Languages
-NeoBundle 'klen/python-mode', {'rev': 'master'}
-NeoBundle 'weiss/textgenshi.vim'
-NeoBundle 'sophacles/vim-bundle-mako'
-NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'Valloric/MatchTagAlways'
-NeoBundle 'tpope/vim-markdown'
-NeoBundle 'jakar/vim-json'
-NeoBundle 'smerrill/vcl-vim-plugin'
-NeoBundle 'chrisbra/csv.vim'
-NeoBundle 'moll/vim-node'
-NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'dag/vim-fish'
+Plug 'klen/python-mode', { 'for': 'python' }
+Plug 'weiss/textgenshi.vim'
+Plug 'sophacles/vim-bundle-mako'
+Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
+Plug 'Valloric/MatchTagAlways'
+Plug 'tpope/vim-markdown', { 'for': 'markdown' }
+Plug 'jakar/vim-json', { 'for': 'json' }
+Plug 'smerrill/vcl-vim-plugin'
+Plug 'chrisbra/csv.vim'
+Plug 'moll/vim-node', { 'for': 'javascript' }
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'dag/vim-fish'
 
 " Programming
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'tpope/vim-dispatch'
-" NeoBundle 'mhinz/vim-signify'
-NeoBundle 'rking/ag.vim'
-NeoBundle 'scrooloose/syntastic'
-" NeoBundle 'majutsushi/tagbar'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-dispatch'
+" Plug 'mhinz/vim-signify'
+Plug 'rking/ag.vim'
+Plug 'scrooloose/syntastic'
+Plug 'majutsushi/tagbar'
 
 " Editing
-NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'tacahiroy/ctrlp-funky'
-NeoBundle 'Lokaltog/vim-easymotion'
-NeoBundle 'tpope/vim-abolish'
-NeoBundle 'tpope/vim-unimpaired'
-NeoBundle 'tpope/vim-eunuch'
-NeoBundle 'Valloric/YouCompleteMe'
-NeoBundle 'marijnh/tern_for_vim', {
-    \ 'build' : {
-    \   'mac': 'which npm && npm install',
-    \   'unix': 'which npm && npm install',
-    \   },
-    \ }
-NeoBundle 'tpope/vim-commentary'
-NeoBundle 'godlygeek/tabular'
-NeoBundle 'mbbill/undotree'
+Plug 'kien/ctrlp.vim'
+Plug 'tacahiroy/ctrlp-funky'
+Plug 'Lokaltog/vim-easymotion'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-eunuch'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+Plug 'marijnh/tern_for_vim', { 'do': 'npm install', 'for': 'javascript' }
+Plug 'tpope/vim-commentary'
+Plug 'godlygeek/tabular'
+Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 
 " Text objects
-NeoBundle 'terryma/vim-expand-region'
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'tpope/vim-repeat'
-NeoBundle 'kana/vim-textobj-user'
-NeoBundle 'kana/vim-textobj-entire' " ae, ie
-NeoBundle 'kana/vim-textobj-lastpat' " a/, i/, a?, i?
-NeoBundle 'kana/vim-textobj-line' " al, il
-NeoBundle 'kana/vim-textobj-indent' " ai, ii, aI, iI
-NeoBundle 'lucapette/vim-textobj-underscore' " a_, i_
+Plug 'terryma/vim-expand-region'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'kana/vim-textobj-user'
+Plug 'kana/vim-textobj-entire' " ae, ie
+Plug 'kana/vim-textobj-lastpat' " a/, i/, a?, i?
+Plug 'kana/vim-textobj-line' " al, il
+Plug 'kana/vim-textobj-indent' " ai, ii, aI, iI
+Plug 'lucapette/vim-textobj-underscore' " a_, i_
 
 " Display
-NeoBundle 'tomasr/molokai'
-NeoBundle 'bling/vim-airline'
-NeoBundle 'tyru/current-func-info.vim'
-NeoBundle 'fakeclip'
-NeoBundle 'ivyl/vim-bling'
-NeoBundle 'sjl/vitality.vim'
+Plug 'tomasr/molokai'
+Plug 'bling/vim-airline'
+Plug 'tyru/current-func-info.vim'
+Plug 'fakeclip'
+Plug 'ivyl/vim-bling'
+Plug 'sjl/vitality.vim'
 
-call neobundle#end()
+call plug#end()
 
 syntax on
 filetype plugin indent on
-
-NeoBundleCheck
 
 "==============================================================================
 " Builtin Settings
