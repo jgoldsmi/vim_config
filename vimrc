@@ -74,6 +74,7 @@ Plug 'tyru/current-func-info.vim'
 Plug 'fakeclip'
 Plug 'ivyl/vim-bling'
 Plug 'sjl/vitality.vim'
+Plug 'bronson/vim-trailing-whitespace'
 
 call plug#end()
 
