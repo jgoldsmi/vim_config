@@ -340,6 +340,9 @@ nnoremap <leader>t :TagbarToggle<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 nnoremap <leader>w <C-w>w
 noremap <silent> <C-l> :nohls<CR><C-l>
+
+"Ag binding
+nnoremap <leader>/ :Ag<space>
 "==============================================================================
 " Visual Mode Mappings
 "==============================================================================
