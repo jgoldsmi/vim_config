@@ -318,6 +318,7 @@ map! <S-Insert> <MiddleMouse>
 " Normal Mode Mappings
 "==============================================================================
 nnoremap <bar> :vsplit<CR>
+nnoremap <leader><tab> <C-^>
 nnoremap <leader>a =ip
 nnoremap <leader>d :lclose<CR>:bd<CR>
 nnoremap <leader>e :Errors<CR>
