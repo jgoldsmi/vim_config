@@ -288,6 +288,7 @@ let g:ctrlp_map = '<leader>pp'
 let g:ctrlp_match_window = 'min:1,max:25,results:50'
 let g:ctrlp_extensions = ['buffertag', 'tag', 'undo', 'funky']
 let g:ctrlp_open_multiple_files = '1ij'
+let g:ctrlp_clear_cache_on_exit = 0
 
 "==============================================================================
 " Custom functions
