@@ -47,7 +47,7 @@ Plug 'majutsushi/tagbar'
 Plug 'kien/ctrlp.vim'
 Plug 'tacahiroy/ctrlp-funky'
 Plug 'mihaifm/bufstop', { 'on': 'BufstopFast' }
-Plug 'Lokaltog/vim-easymotion'
+Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-eunuch'
@@ -178,9 +178,9 @@ if executable("ack-grep")
 endif
 
 "==============================================================================
-" vim-easymotion options
+" vim-sneak options
 "==============================================================================
-let g:EasyMotion_smartcase = 1
+let g:sneak#streak = 1
 
 "==============================================================================
 " C settings
@@ -329,10 +329,6 @@ nnoremap <leader>e :Errors<CR>
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gg :Gstatus<CR>
 nnoremap <leader>gw :Gwrite<CR>
-" EasyMotion bindings
-map <Leader>j <Plug>(easymotion-j)
-map <Leader>k <Plug>(easymotion-k)
-nmap s <Plug>(easymotion-s2)
 
 nnoremap <leader>o :only<CR>
 " CtrlP Bindings
