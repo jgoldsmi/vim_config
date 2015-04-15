@@ -217,13 +217,13 @@ let python_highlight_all = 1
 au BufRead,BufNewFile *.mako  set ft=mako
 au BufRead,BufNewFile *.psp set ft=python
 au BufRead,BufNewFile *.html,*.tpl set ft=htmldjango
-let g:pymode_folding             = 0
-let g:pymode_lint                = 0
-let g:pymode_rope                = 1
-let g:pymode_rope_completion     = 0
-let g:pymode_rope_lookup_project = 0
-let g:pymode_trim_whitespaces    = 0
-let g:syntastic_python_flake8_args = "--ignore=E501"
+let g:pymode_folding               = 0
+let g:pymode_lint                  = 0
+let g:pymode_rope                  = 1
+let g:pymode_rope_completion       = 0
+let g:pymode_rope_lookup_project   = 0
+let g:pymode_trim_whitespaces      = 0
+let g:syntastic_python_flake8_args = "--ignore = E501"
 
 " Genshi settings
 augroup filetypedetect
