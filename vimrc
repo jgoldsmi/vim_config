@@ -111,7 +111,6 @@ set shortmess+=I
 set noshowmode
 set showmatch matchtime=5
 set showcmd
-set autoindent smartindent
 set printoptions=number:y,paper:letter
 set tags=./tags;
 set scrolloff=5
