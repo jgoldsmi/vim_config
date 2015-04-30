@@ -18,7 +18,6 @@ call plug#begin("~/.vim/plugged")
 " Plug Listings
 "==============================================================================
 
-Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 
 " Languages
 Plug 'klen/python-mode', { 'for': 'python' }
