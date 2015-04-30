@@ -18,6 +18,7 @@ call plug#begin("~/.vim/plugged")
 " Plug Listings
 "==============================================================================
 
+Plug 'godlygeek/tabular'
 
 " Languages
 Plug 'klen/python-mode', { 'for': 'python' }
@@ -25,7 +26,7 @@ Plug 'weiss/textgenshi.vim'
 Plug 'sophacles/vim-bundle-mako'
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'Valloric/MatchTagAlways'
-Plug 'tpope/vim-markdown', { 'for': 'markdown' }
+Plug 'plasticboy/vim-markdown'
 Plug 'jakar/vim-json', { 'for': 'json' }
 Plug 'smerrill/vcl-vim-plugin'
 Plug 'chrisbra/csv.vim'
@@ -53,7 +54,6 @@ Plug 'tpope/vim-eunuch'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
 Plug 'marijnh/tern_for_vim', { 'do': 'npm install', 'for': 'javascript' }
 Plug 'tpope/vim-commentary'
-Plug 'godlygeek/tabular'
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 
 " Text objects
@@ -263,7 +263,7 @@ au FileType ruby setl et sw=2 ts=2 sts=2
 "==============================================================================
 " Markdown settings
 "==============================================================================
-au FileType markdown setl et spell tw=80
+au FileType mkd setl et spell tw=80 nofen
 
 "==============================================================================
 " Puppet settings
