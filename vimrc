@@ -286,7 +286,7 @@ call expand_region#custom_text_objects({
 "==============================================================================
 let g:ctrlp_map = '<leader>pp'
 let g:ctrlp_match_window = 'min:1,max:25,results:50'
-let g:ctrlp_extensions = ['buffertag', 'tag', 'undo', 'funky']
+let g:ctrlp_extensions = ['buffertag', 'tag', 'undo', 'funky', 'line']
 let g:ctrlp_open_multiple_files = '1ij'
 let g:ctrlp_clear_cache_on_exit = 0
 
@@ -331,6 +331,7 @@ nnoremap <leader>gw :Gwrite<CR>
 nnoremap <leader>o :only<CR>
 " CtrlP Bindings
 nnoremap <leader>pb :CtrlPBuffer<CR>
+nnoremap <leader>pl :CtrlPLine<CR>
 nnoremap <leader>pm :CtrlPMRU<CR>
 nnoremap <leader>pt :CtrlPBufTag<CR>
 nnoremap <leader>pu :CtrlPUndo<CR>
