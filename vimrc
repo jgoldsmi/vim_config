@@ -32,6 +32,7 @@ Plug 'smerrill/vcl-vim-plugin'
 Plug 'chrisbra/csv.vim'
 Plug 'moll/vim-node', { 'for': 'javascript' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'mxw/vim-jsx'
 Plug 'dag/vim-fish'
 Plug 'groenewege/vim-less'
 
@@ -247,7 +248,12 @@ let php_parent_error_open             = 1
 " Javascript settings
 "==============================================================================
 au FileType javascript setl et sw=4 ts=4 sts=4
-let g:syntastic_javascript_checkers = ['jshint', 'jslint']
+let g:syntastic_javascript_checkers = ['eslint']
+
+"==============================================================================
+" jsx settings
+"==============================================================================
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
 "==============================================================================
 " Shell settings
