@@ -168,6 +168,7 @@ let g:ycm_show_diagnostics_ui = 0
 " syntastic options
 "==============================================================================
 let g:syntastic_enable_signs=1
+let g:syntastic_check_on_open = 1
 
 "==============================================================================
 " ack options
