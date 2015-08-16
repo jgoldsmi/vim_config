@@ -47,6 +47,7 @@ Plug 'majutsushi/tagbar'
 " Editing
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tacahiroy/ctrlp-funky'
+Plug 'FelikZ/ctrlp-py-matcher'
 Plug 'mihaifm/bufstop', { 'on': 'BufstopFast' }
 Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-abolish'
@@ -292,6 +293,7 @@ call expand_region#custom_text_objects({
 " CtrlP Settings
 "==============================================================================
 let g:ctrlp_map = '<leader>pp'
+let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 let g:ctrlp_match_window = 'min:1,max:25,results:50'
 let g:ctrlp_extensions = ['buffertag', 'tag', 'undo', 'funky', 'line']
 let g:ctrlp_open_multiple_files = '1ij'
