@@ -45,7 +45,7 @@ Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
 
 " Editing
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tacahiroy/ctrlp-funky'
 Plug 'mihaifm/bufstop', { 'on': 'BufstopFast' }
 Plug 'justinmk/vim-sneak'
