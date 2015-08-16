@@ -41,6 +41,8 @@ Plug 'mhinz/vim-signify'
 Plug 'rking/ag.vim'
 Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+Plug 'marijnh/tern_for_vim', { 'do': 'npm install', 'for': 'javascript' }
 
 " Editing
 Plug 'ctrlpvim/ctrlp.vim'
@@ -52,8 +54,6 @@ Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-eunuch'
 Plug 'junegunn/vim-easy-align'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
-Plug 'marijnh/tern_for_vim', { 'do': 'npm install', 'for': 'javascript' }
 Plug 'tpope/vim-commentary'
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 
@@ -164,6 +164,7 @@ let g:ycm_filetype_blacklist = {
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_show_diagnostics_ui = 0
+
 "==============================================================================
 " syntastic options
 "==============================================================================
