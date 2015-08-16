@@ -18,8 +18,6 @@ call plug#begin("~/.vim/plugged")
 " Plug Listings
 "==============================================================================
 
-Plug 'godlygeek/tabular'
-
 " Languages
 Plug 'klen/python-mode', { 'for': 'python' }
 Plug 'weiss/textgenshi.vim'
@@ -53,6 +51,7 @@ Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-eunuch'
+Plug 'junegunn/vim-easy-align'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
 Plug 'marijnh/tern_for_vim', { 'do': 'npm install', 'for': 'javascript' }
 Plug 'tpope/vim-commentary'
@@ -332,6 +331,7 @@ nnoremap <leader>a =ip
 nnoremap <leader>b :BufstopFast<CR>
 nnoremap <leader>d :lclose<CR>:bd<CR>
 nnoremap <leader>e :Errors<CR>
+nmap ga <Plug>(EasyAlign)
 " Fugitive bindings
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gg :Gstatus<CR>
@@ -356,6 +356,7 @@ nnoremap <leader>/ :Ag<space>
 "==============================================================================
 " Visual Mode Mappings
 "==============================================================================
+vmap <Enter> <Plug>(EasyAlign)
 
 "  In visual mode when you press * or # to search for the current selection
 " Search for selected text, forwards or backwards.
