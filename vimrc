@@ -76,6 +76,7 @@ Plug 'fakeclip'
 Plug 'ivyl/vim-bling'
 Plug 'sjl/vitality.vim'
 Plug 'bronson/vim-trailing-whitespace'
+Plug 'junegunn/vim-peekaboo'
 
 call plug#end()
 
