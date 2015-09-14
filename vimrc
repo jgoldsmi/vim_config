@@ -18,6 +18,9 @@ call plug#begin("~/.vim/plugged")
 " Plug Listings
 "==============================================================================
 
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+Plug 'junegunn/fzf.vim'
+
 " Languages
 Plug 'klen/python-mode', { 'for': 'python' }
 Plug 'weiss/textgenshi.vim'
@@ -38,7 +41,6 @@ Plug 'groenewege/vim-less'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-dispatch'
 Plug 'mhinz/vim-signify'
-Plug 'rking/ag.vim'
 Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
@@ -341,7 +343,7 @@ nnoremap <leader>gw :Gwrite<CR>
 
 nnoremap <leader>o :only<CR>
 " CtrlP Bindings
-nnoremap <leader>pb :CtrlPBuffer<CR>
+nnoremap <leader>pb :Buffers<CR>
 nnoremap <leader>pl :CtrlPLine<CR>
 nnoremap <leader>pm :CtrlPMRU<CR>
 nnoremap <leader>pt :CtrlPBufTag<CR>
