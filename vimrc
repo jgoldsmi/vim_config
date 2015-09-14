@@ -32,8 +32,8 @@ Plug 'shime/vim-livedown', { 'do': 'npm install -g livedown' }
 Plug 'jakar/vim-json', { 'for': 'json' }
 Plug 'smerrill/vcl-vim-plugin'
 Plug 'chrisbra/csv.vim'
-Plug 'moll/vim-node', { 'for': 'javascript' }
-Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'moll/vim-node'
+Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'dag/vim-fish'
 Plug 'groenewege/vim-less'
