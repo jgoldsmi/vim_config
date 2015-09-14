@@ -27,7 +27,8 @@ Plug 'weiss/textgenshi.vim'
 Plug 'sophacles/vim-bundle-mako'
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'Valloric/MatchTagAlways'
-Plug 'plasticboy/vim-markdown'
+Plug 'tpope/vim-markdown'
+Plug 'shime/vim-livedown', { 'do': 'npm install -g livedown' }
 Plug 'jakar/vim-json', { 'for': 'json' }
 Plug 'smerrill/vcl-vim-plugin'
 Plug 'chrisbra/csv.vim'
@@ -274,7 +275,7 @@ au FileType ruby setl et sw=2 ts=2 sts=2
 "==============================================================================
 " Markdown settings
 "==============================================================================
-au FileType mkd setl et spell tw=80 nofen
+au FileType markdown setl et spell tw=80 nofen
 
 "==============================================================================
 " Puppet settings
