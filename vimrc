@@ -331,6 +331,7 @@ map! <S-Insert> <MiddleMouse>
 " Normal Mode Mappings
 "==============================================================================
 nnoremap <bar> :vsplit<CR>
+nnoremap <leader><leader> :Files<CR>
 nnoremap <leader><tab> <C-^>
 nnoremap <leader>a =ip
 nnoremap <leader>b :BufstopFast<CR>
@@ -357,7 +358,7 @@ nnoremap <leader>w <C-w>w
 noremap <silent> <C-l> :nohls<CR><C-l>
 
 "Ag binding
-nnoremap <leader>/ :Ag<space>
+nnoremap <leader>/ :Ag <C-R>=expand("<cword>")<CR>
 "==============================================================================
 " Visual Mode Mappings
 "==============================================================================
