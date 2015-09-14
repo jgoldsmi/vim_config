@@ -80,6 +80,7 @@ Plug 'ivyl/vim-bling'
 Plug 'sjl/vitality.vim'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'junegunn/vim-peekaboo'
+Plug 'vasconcelloslf/vim-interestingwords'
 
 call plug#end()
 
