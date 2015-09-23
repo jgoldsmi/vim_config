@@ -344,6 +344,8 @@ nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gg :Gstatus<CR>
 nnoremap <leader>gw :Gwrite<CR>
 
+nnoremap <leader>h :History<CR>
+
 nnoremap <leader>o :only<CR>
 " CtrlP Bindings
 nnoremap <leader>pb :Buffers<CR>
