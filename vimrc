@@ -109,6 +109,7 @@ set smartcase
 set notildeop
 set laststatus=2
 set nostartofline
+set nofoldenable
 set history=10000
 set backspace=eol,indent,start
 set mouse=a
