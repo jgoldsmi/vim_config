@@ -44,7 +44,7 @@ Plug 'tpope/vim-dispatch'
 Plug 'mhinz/vim-signify'
 Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
 Plug 'marijnh/tern_for_vim', { 'do': 'npm install', 'for': 'javascript' }
 
 " Editing
