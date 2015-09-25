@@ -230,7 +230,7 @@ let g:pymode_rope                  = 1
 let g:pymode_rope_completion       = 0
 let g:pymode_rope_lookup_project   = 0
 let g:pymode_trim_whitespaces      = 0
-let g:syntastic_python_flake8_args = "--ignore = E501"
+let g:syntastic_python_flake8_args = "--ignore=E501"
 
 " Genshi settings
 augroup filetypedetect
