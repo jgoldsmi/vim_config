@@ -336,7 +336,7 @@ nnoremap <bar> :vsplit<CR>
 nnoremap <leader><leader> :Files<CR>
 nnoremap <leader><tab> <C-^>
 nnoremap <leader>a =ip
-nnoremap <leader>b :BufstopFast<CR>
+nnoremap <leader>B :BufstopFast<CR>
 nnoremap <leader>d :lclose<CR>:bd<CR>
 nnoremap <leader>e :Errors<CR>
 nmap ga <Plug>(EasyAlign)
