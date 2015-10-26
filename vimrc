@@ -329,7 +329,7 @@ nnoremap <leader>e :Errors<CR>
 " FZF Bindings
 nnoremap <leader>fbb :Buffers<CR>
 nnoremap <leader>fbc :BCommits<CR>
-nnoremap <leader>fbl :Blines<CR>
+nnoremap <leader>fbl :BLines<CR>
 nnoremap <leader>fbt :BTags<CR>
 nnoremap <leader>ff :Files<CR>
 nnoremap <leader>fh :History<CR>
