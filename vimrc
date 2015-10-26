@@ -48,9 +48,6 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
 Plug 'marijnh/tern_for_vim', { 'do': 'npm install', 'for': 'javascript' }
 
 " Editing
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'tacahiroy/ctrlp-funky'
-Plug 'FelikZ/ctrlp-py-matcher'
 Plug 'mihaifm/bufstop', { 'on': 'BufstopFast' }
 Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-abolish'
@@ -76,7 +73,6 @@ Plug 'tomasr/molokai'
 Plug 'bling/vim-airline'
 Plug 'tyru/current-func-info.vim'
 Plug 'fakeclip'
-Plug 'ivyl/vim-bling'
 Plug 'sjl/vitality.vim'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'junegunn/vim-peekaboo'
@@ -295,15 +291,6 @@ call expand_region#custom_text_objects({
       \ 'ai' :0,
       \ })
 
-"==============================================================================
-" CtrlP Settings
-"==============================================================================
-let g:ctrlp_map = '<leader>pp'
-let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
-let g:ctrlp_match_window = 'min:1,max:25,results:50'
-let g:ctrlp_extensions = ['buffertag', 'tag', 'undo', 'funky', 'line']
-let g:ctrlp_open_multiple_files = '1ij'
-let g:ctrlp_clear_cache_on_exit = 0
 
 "==============================================================================
 " Custom functions
@@ -333,12 +320,20 @@ map! <S-Insert> <MiddleMouse>
 " Normal Mode Mappings
 "==============================================================================
 nnoremap <bar> :vsplit<CR>
-nnoremap <leader><leader> :Files<CR>
 nnoremap <leader><tab> <C-^>
 nnoremap <leader>a =ip
 nnoremap <leader>B :BufstopFast<CR>
 nnoremap <leader>d :lclose<CR>:bd<CR>
 nnoremap <leader>e :Errors<CR>
+" FZF Bindings
+nnoremap <leader>fbb :Buffers<CR>
+nnoremap <leader>fbc :BCommits<CR>
+nnoremap <leader>fbl :Blines<CR>
+nnoremap <leader>fbt :BTags<CR>
+nnoremap <leader>ff :Files<CR>
+nnoremap <leader>fh :History<CR>
+nnoremap <leader>fl :Lines<CR>
+nnoremap <leader>ft :Tags<CR>
 nmap ga <Plug>(EasyAlign)
 " Fugitive bindings
 nnoremap <leader>gb :Gblame<CR>
@@ -348,13 +343,6 @@ nnoremap <leader>gw :Gwrite<CR>
 nnoremap <leader>h :History<CR>
 
 nnoremap <leader>o :only<CR>
-" CtrlP Bindings
-nnoremap <leader>pb :Buffers<CR>
-nnoremap <leader>pl :CtrlPLine<CR>
-nnoremap <leader>pm :CtrlPMRU<CR>
-nnoremap <leader>pt :CtrlPBufTag<CR>
-nnoremap <leader>pu :CtrlPUndo<CR>
-nnoremap <leader>pf :CtrlPFunky<CR>
 nnoremap <leader>sp :split<CR>
 nnoremap <leader>t :TagbarToggle<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
