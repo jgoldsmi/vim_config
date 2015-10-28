@@ -54,7 +54,7 @@ Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-eunuch'
-Plug 'junegunn/vim-easy-align'
+Plug 'junegunn/vim-easy-align', { 'on': ['<Plug>(EasyAlign)', 'EasyAlign'] }
 Plug 'tpope/vim-commentary'
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 
