@@ -305,9 +305,9 @@ augroup END " }
 "==============================================================================
 
 " Use space as leader everywhere
-let mapleader = " "
-let g:mapleader = " "
-let maplocalleader = " "
+let mapleader        = " "
+let g:mapleader      = " "
+let maplocalleader   = " "
 let g:maplocalleader = " "
 
 " Make shift-insert work like in Xterm
