@@ -46,7 +46,7 @@ Plug 'mhinz/vim-signify'
 Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
-Plug 'marijnh/tern_for_vim', { 'do': 'npm install', 'for': 'javascript' }
+Plug 'ternjs/tern_for_vim', { 'do': 'npm install', 'for': 'javascript' }
 
 " Editing
 Plug 'mihaifm/bufstop', { 'on': 'BufstopFast' }
