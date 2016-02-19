@@ -39,7 +39,6 @@ Plug 'dag/vim-fish'
 Plug 'groenewege/vim-less'
 
 " Programming
-Plug 'ludovicchabant/vim-gutentags'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-dispatch'
 Plug 'mhinz/vim-signify'
