@@ -70,7 +70,8 @@ Plug 'lucapette/vim-textobj-underscore' " a_, i_
 
 " Display
 Plug 'tomasr/molokai'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'tyru/current-func-info.vim'
 Plug 'fakeclip'
 Plug 'sjl/vitality.vim'
