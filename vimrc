@@ -70,6 +70,7 @@ Plug 'lucapette/vim-textobj-underscore' " a_, i_
 
 " Display
 Plug 'tomasr/molokai'
+Plug 'altercation/vim-colors-solarized'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tyru/current-func-info.vim'
@@ -122,7 +123,7 @@ set vb t_vb=
 set t_Co=256
 set background=dark
 let g:rehash256 = 1
-colorscheme molokai
+colorscheme solarized
 set listchars=eol:¬,tab:→\ ,trail:·,extends:»,precedes:«
 set list
 set cursorline
