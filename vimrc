@@ -118,7 +118,7 @@ set scrolloff=5
 set wrap
 set vb t_vb=
 set t_Co=256
-set background=dark
+set background=light
 let g:rehash256 = 1
 colorscheme solarized
 set listchars=eol:¬,tab:→\ ,trail:·,extends:»,precedes:«
@@ -151,7 +151,7 @@ runtime macros/matchit.vim
 "==============================================================================
 " Airline settings
 "==============================================================================
-let g:airline_theme = 'molokai'
+let g:airline_theme = 'solarized'
 let g:airline#extensions#tabline#enabled = 1
 
 "==============================================================================
