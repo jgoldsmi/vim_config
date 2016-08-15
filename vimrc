@@ -23,8 +23,6 @@ Plug 'junegunn/fzf.vim'
 
 " Languages
 Plug 'klen/python-mode', { 'for': 'python' }
-Plug 'weiss/textgenshi.vim'
-Plug 'sophacles/vim-bundle-mako'
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'Valloric/MatchTagAlways'
 Plug 'tpope/vim-markdown'
@@ -35,7 +33,6 @@ Plug 'chrisbra/csv.vim'
 Plug 'moll/vim-node'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
-Plug 'dag/vim-fish'
 Plug 'groenewege/vim-less'
 
 " Programming
