@@ -21,6 +21,19 @@ call plug#begin("~/.vim/plugged")
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
+command! FZFMru call fzf#run({
+\ 'source':  reverse(s:all_files()),
+\ 'sink':    'edit',
+\ 'options': '-m -x +s',
+\ 'down':    '40%' })
+
+function! s:all_files()
+  return extend(
+  \ filter(copy(v:oldfiles),
+  \        "v:val !~ 'fugitive:\\|NERD_tree\\|^/tmp/\\|.git/'"),
+  \ map(filter(range(1, bufnr('$')), 'buflisted(v:val)'), 'bufname(v:val)'))
+endfunction
+
 " Languages
 Plug 'klen/python-mode', { 'for': 'python' }
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
@@ -329,6 +342,7 @@ nnoremap <leader>fbt :BTags<CR>
 nnoremap <leader>ff :Files<CR>
 nnoremap <leader>fh :History<CR>
 nnoremap <leader>fl :Lines<CR>
+nnoremap <leader>fm :FZFMru<CR>
 nnoremap <leader>ft :Tags<CR>
 nmap ga <Plug>(EasyAlign)
 " Fugitive bindings
